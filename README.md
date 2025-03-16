@@ -362,6 +362,25 @@ Examines methods for generating human-like gestures and co-speech movements, cri
 
 ### 🗂 Datasets
 
+| 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
+|------------|------------------|------------------|------------|
+| **IEMOCAP** | 151 dialogue videos (302 total), 9 annotated emotions, valence/arousal/dominance labels, ~12 hours of audiovisual data. | ✋ Gestures, 🎵 Audio, 📝 Text, 😃 Emotion | [IEMOCAP](https://sail.usc.edu/iemocap/) |
+| **SaGA** | 25 dialogues (50 total), German language, 6 published speakers, 1,764 annotated gestures, 1-hour duration. | ✋ Gestures, 🎵 Audio, 🎭 Gesture Properties | [SaGA](https://www.phonetik.uni-muenchen.de/Bas/BasSaGAeng.html) |
+| **Creative-IT** | 16 actors in dyadic affective interactions (2-10 min each), ~8 sessions released. | ✋ Gestures, 🎵 Audio, 📝 Text, 😃 Emotion | [Creative-IT](https://sail.usc.edu/CreativeIT/ImprovRelease.html) |
+| **CMU Panoptic** | 3D facial landmarks from 65 sequences (5.5 hours), 1.5 million 3D skeletons. | ✋ Gestures, 🎵 Audio, 📝 Text | [CMU Panoptic](http://domedb.perception.cs.cmu.edu/) |
+| **Speech-Gesture** | 144 hours of data with 10 speakers, automatic pose annotations. | ✋ Gestures, 🎵 Audio | [Speech-Gesture](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/) |
+| **Talking With Hands 16.2M** | 16.2 million frames (~50 hours) of face-to-face conversations, strong covariance in hand movements. | ✋ Gestures, 🎵 Audio | [Talking With Hands](https://github.com/facebookresearch/TalkingWithHands32M) |
+| **PATS** | 25 speakers, 251 hours of data, ~84,000 gesture intervals (avg. 10.7s). | ✋ Gestures, 🎵 Audio, 📝 Text | [PATS](http://chahuja.com/pats/) |
+| **Trinity Speech-Gesture II** | 244 minutes of motion capture and audio, 1 speaker, 69-joint skeleton model. | ✋ Gestures, 🎵 Audio, 🎭 Gesture Segmentation | [Trinity](https://trinityspeechgesture.scss.tcd.ie/) |
+| **SaGA++** | 25 recordings, ~4 hours of data. | ✋ Gestures, 🎵 Audio, 📝 Text, 🎭 Gesture Properties | [SaGA++](https://svito-zar.github.io/speech2properties2gestures/) |
+| **ZEGGS** | 67 monologue sequences in 19 motion styles, 1 female actor, ~134 minutes total. | ✋ Gestures, 🎵 Audio | [ZEGGS](https://github.com/ubisoft/ubisoft-laforge-ZeroEGGS) |
+| **BEAT** | 76 hours of 3D motion capture, 30 speakers, 8 emotions, 4 languages, 32M frame annotations. | ✋ Gestures, 🎵 Audio, 📝 Text, 😃 Emotion, 🎭 Gesture Properties | [BEAT](https://pantomatrix.github.io/BEAT/) |
+| **BEAT2** | 60 hours of mesh-level motion-captured gestures, SMPL-X & FLAME parameters for head/neck/fingers. | ✋ Gestures, 🎵 Audio, 🎭 Gesture Properties, 😃 Emotion | [BEAT2](https://pantomatrix.github.io/EMAGE/) |
+| **GAMT (Gestures Accompanying Math Terms)** | 176 video clips of volunteers demonstrating 8 math gesture classes. | ✋ Gestures, 🎵 Audio, 📝 Text | [GAMT](https://openaccess.thecvf.com/content/CVPR2024W/MAR/html/Maidment_Using_Language-Aligned_Gesture_Embeddings_for_Understanding_Gestures_Accompanying_Math_Terms_CVPRW_2024_paper.html) |
+| **SeG** | 208 semantic gesture types, 544 motion files, avg. 2.6 gesture variations per type. | ✋ Gestures, 🎭 Gesture Properties, 🎵 Audio | [SeG](https://pku-mocca.github.io/Semantic-Gesticulator-Page/) |
+| **DND Group Gesture** | 6 hours of data from 5 players in a Dungeons & Dragons setting, includes beat/iconic/deictic/metaphoric gestures. | ✋ Gestures, 🎵 Audio, 🎭 Gesture Properties | [DND](https://github.com/m-hamza-mughal/convofusion) |
+
+
 ---
 
 ### 🤖 Models
