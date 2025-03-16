@@ -10,7 +10,7 @@ This repository is designed to collect and categorize papers, datasets, and reso
 
 - [📝 Abstract](#-abstract)
 - [📚 Background](#-background)
-  - [⚙️ Models](#-models)
+  - [🤖 Models](#-models)
     - [🎨 Computer Graphics Models](#-computer-graphics-models)
     - [👀 Vision](#-vision)
     - [📝 Language Models](#-language-models)
@@ -48,7 +48,7 @@ This survey offers a comprehensive review of the state-of-the-art in generative 
 
 ## 📚 Background
 
-### ⚙️ Models
+### 🤖 Models
 
 #### 🎨 Computer Graphics Models
 - **SMPL** [🔗](https://smpl.is.tue.mpg.de/)  
