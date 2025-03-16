@@ -322,6 +322,20 @@ Explores diffusion-based methods, VAEs, and other generative techniques to produ
 ## 👤 Avatar
 Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digital representations with detailed facial expressions and body dynamics.
 
+| 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
+|------------|------------------|------------------|------------|
+| **WildAvatar** | 10,000+ human subjects extracted from YouTube; significantly richer than previous 3D avatar datasets. | 🎥 Video, 🏃 3D Body Motion, 🎵 Audio | [WildAvatar](https://wildavatar.github.io/) |
+| **ZJU-MoCap** | Multi-camera system (20+ cameras); includes SMPL-X parameters for body, hand, and face motion capture. | 🎥 Video, 🏃 3D Body Motion, 🔷 SMPL-X Parameters | [ZJU-MoCap](https://chingswy.github.io/Dataset-Demo/) |
+| **TalkSHOW** | 26.9 hours of in-the-wild talking videos (4 speakers); expressive 3D whole-body meshes at 30 fps, synchronized with 🎵 audio at 22 kHz. | 🎵 Audio, 🏃 3D Body Meshes | [TalkSHOW](https://talkshow.is.tue.mpg.de/) |
+| **HuMMan** | 1,000 human subjects, 400K sequences, 60M frames; includes point clouds, SMPL parameters, and textured meshes. | 🎥 Video, 📏 Point Clouds, 🔷 SMPL Parameters, 🎭 Textured Meshes | [HuMMan](https://caizhongang.com/projects/HuMMan/) |
+| **BUFF** | 6 subjects performing motions in two clothing styles; 13,632 3D scans with high-resolution minimally-clothed shapes. | 🏃 3D Body Scans, 🎭 Textured 3D Meshes | [BUFF](https://buff.is.tue.mpg.de/) |
+| **AMASS** | 15 motion capture datasets merged; 42+ hours of motion data, 346 subjects, 11,451 motions, SMPL parameters. | 🏃 3D Body Motion, 🔷 SMPL Parameters | [AMASS](https://amass.is.tue.mpg.de/) |
+| **3DPW** | 60 video sequences with 3D pose estimation using IMU sensors and video data; includes 18 re-poseable body models. | 🎥 Video, 🏃 2D/3D Poses, 📡 IMU Data, 🏃 3D Body Scans | [3DPW](https://virtualhumans.mpi-inf.mpg.de/3DPW/) |
+| **AIST++** | 10M+ frames of 3D keypoints; 1,408 dance motion sequences spanning 10 genres, synchronized with 🎵 music. | 🎥 Video, 🎵 Audio, 🏃 3D Keypoints, 🔷 SMPL Parameters | [AIST++](https://google.github.io/aistplusplus_dataset/) |
+| **RenderMe-360** | 243M head frames from 500 identities; includes FLAME parameters, UV maps, action units, and textured meshes. | 🎥 Video, 🎭 2D/3D Facial Landmarks, 🔷 FLAME Parameters | [RenderMe-360](https://renderme-360.github.io/) |
+| **PuzzleIOI** | 41 subjects with nearly 1,000 Outfit-of-the-Day (OOTD) configurations; paired 3D body scans for partial images. | 🖼️ Image, 🏃 3D Body Models, 📝 Text Descriptions | [PuzzleIOI](https://puzzleavatar.is.tue.mpg.de/) |
+
+
 ### 🗂 Datasets
 
 ### 🤖 Models
