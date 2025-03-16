@@ -287,10 +287,10 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 | 🏷️ **Dataset** | 📊 **Key Features** | 🎭 **Modalities** | 🔗 **Reference** |
 |--------------|------------------|------------------|-----------------|
-| **TEAD (Text-Expression Aligned Dataset)** | Aligns text descriptions with emotion tags, AUs, and blend shape weights for text-to-face generation. |  Text,  Facial Expressions,  Blend Shapes,  AUs | [TEAD](https://arxiv.org/abs/2303.12345) \cite{zhong2023expclipbridgingtextfacial} |
-| **BEAT** | 52-dimensional blend shape weights integrated with audio, emotion, and gesture modalities. |  Facial Expressions,  Audio,  Gesture | [BEAT](https://arxiv.org/abs/2203.04202) \cite{liu2022beat} |
-| **VOCASET** | High-fidelity 4D facial scans synchronized with speech data, enabling 3D facial animation from speech input. |  Audio,  4D Facial Scans | [VOCASET](https://voca.is.tue.mpg.de/) \cite{Cudeiro2019CaptureLA} |
-| **SHOW** | Combines video, audio, facial expressions, and pose data to generate 3D human motion from speech. |  Video,  Audio,  Facial Expressions,  Pose | [SHOW](https://arxiv.org/abs/2207.09619) \cite{Yi2022GeneratingH3} |
+| **TEAD (Text-Expression Aligned Dataset)** | Aligns text descriptions with emotion tags, AUs, and blend shape weights for text-to-face generation. |  Text,  Facial Expressions,  Blend Shapes,  AUs | [TEAD](https://github.com/HSMAabdellaoui/TEAD?tab=readme-ov-file) |
+| **BEAT** | 52-dimensional blend shape weights integrated with audio, emotion, and gesture modalities. |  Facial Expressions,  Audio,  Gesture | [BEAT](https://pantomatrix.github.io/BEAT-Dataset/) |
+| **VOCASET** | High-fidelity 4D facial scans synchronized with speech data, enabling 3D facial animation from speech input. |  Audio,  4D Facial Scans | [VOCASET](https://voca.is.tue.mpg.de/)  |
+| **SHOW** | Combines video, audio, facial expressions, and pose data to generate 3D human motion from speech. |  Video,  Audio,  Facial Expressions,  Pose | [SHOW](https://talkshow.is.tue.mpg.de/)  |
 
 
 ### 🤖 Models
