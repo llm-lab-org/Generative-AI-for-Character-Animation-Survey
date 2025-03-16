@@ -244,26 +244,42 @@ Our survey categorizes the latest techniques into several key areas:
 ### 👨 Face
 Focuses on realistic face generation, facial reenactment, and attribute editing using GANs, diffusion models, and specialized frameworks.
 
+### ⚙️ Models
+
 ### 😃 Expression
 Covers emotion-driven synthesis, facial expression retargeting, and multimodal methods that capture nuanced nonverbal cues.
+
+### ⚙️ Models
 
 ### 🖼 Image
 Explores diffusion-based methods, VAEs, and other generative techniques to produce high-fidelity images and textures for animation backgrounds and elements.
 
+### ⚙️ Models
+
 ### 👤 Avatar
 Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digital representations with detailed facial expressions and body dynamics.
+
+### ⚙️ Models
 
 ### 🤝 Gesture
 Examines methods for generating human-like gestures and co-speech movements, critical for interactive and immersive animations.
 
+### ⚙️ Models
+
 ### 🎥 Motion
 Highlights text-constrained motion generation techniques, including MotionGPT and diffusion frameworks, for creating smooth and realistic animation sequences.
+
+### ⚙️ Models
 
 ### 📦 Object
 Discusses approaches for text-to-3D object generation, such as Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting, to create realistic assets.
 
+### ⚙️ Models
+
 ### 🧵 Texture
 Focuses on methods for generating detailed surface textures that enhance the realism of 3D models, including text-guided synthesis and neural rendering techniques.
+
+### ⚙️ Models
 
 ---
 
