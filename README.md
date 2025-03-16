@@ -322,6 +322,8 @@ Explores diffusion-based methods, VAEs, and other generative techniques to produ
 ## 👤 Avatar
 Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digital representations with detailed facial expressions and body dynamics.
 
+### 🗂 Datasets
+
 | 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
 |------------|------------------|------------------|------------|
 | **WildAvatar** | 10,000+ human subjects extracted from YouTube; significantly richer than previous 3D avatar datasets. | 🎥 Video, 🏃 3D Body Motion, 🎵 Audio | [WildAvatar](https://wildavatar.github.io/) |
@@ -334,9 +336,6 @@ Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digi
 | **AIST++** | 10M+ frames of 3D keypoints; 1,408 dance motion sequences spanning 10 genres, synchronized with 🎵 music. | 🎥 Video, 🎵 Audio, 🏃 3D Keypoints, 🔷 SMPL Parameters | [AIST++](https://google.github.io/aistplusplus_dataset/) |
 | **RenderMe-360** | 243M head frames from 500 identities; includes FLAME parameters, UV maps, action units, and textured meshes. | 🎥 Video, 🎭 2D/3D Facial Landmarks, 🔷 FLAME Parameters | [RenderMe-360](https://renderme-360.github.io/) |
 | **PuzzleIOI** | 41 subjects with nearly 1,000 Outfit-of-the-Day (OOTD) configurations; paired 3D body scans for partial images. | 🖼️ Image, 🏃 3D Body Models, 📝 Text Descriptions | [PuzzleIOI](https://puzzleavatar.is.tue.mpg.de/) |
-
-
-### 🗂 Datasets
 
 ### 🤖 Models
 
