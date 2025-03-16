@@ -392,6 +392,17 @@ Highlights text-constrained motion generation techniques, including MotionGPT an
 
 ### 🗂 Datasets
 
+
+| 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
+|------------|------------------|------------------|------------|
+| **KIT** | First openly available dataset with text-motion pairs, enabling text-to-motion research. | 📜 Text, 🏃 Motion | [KIT](https://motion-database.humanoids.kit.edu/) |
+| **AMASS** | Large-scale motion dataset unifying sequences from multiple sources under the SMPL model. | 🏃 Motion (SMPL) | [AMASS](https://amass.is.tue.mpg.de/) |
+| **HumanAct12** | Motion dataset with single-word action annotations; widely used in research. | 📜 Text (single-word labels), 🏃 Motion | [HumanAct12](https://github.com/EricGuo5513/HumanAct12) |
+| **BABEL** | Extends AMASS with sequence and subsequence-level textual annotations. | 📜 Text (sequence-level & subsequence labels), 🏃 Motion | [BABEL](https://babel.is.tue.mpg.de/) |
+| **HumanML3D** | Large dataset with diverse activities, annotated with multiple detailed descriptions for training text-to-motion models. | 📜 Text (detailed descriptions), 🏃 Motion | [HumanML3D](https://github.com/EricGuo5513/HumanML3D) |
+| **Motion-X** | Over 5x more motion clips than HumanML3D, significantly increasing dataset size for text-to-motion tasks. | 📜 Text (detailed descriptions), 🏃 Motion | [Motion-X](https://motion-x.is.tue.mpg.de/) |
+
+
 ---
 
 ### 🤖 Models
