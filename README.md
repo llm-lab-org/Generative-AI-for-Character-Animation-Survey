@@ -414,6 +414,25 @@ Discusses approaches for text-to-3D object generation, such as Neural Radiance F
 
 ### 🗂 Datasets
 
+
+| 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
+|------------|------------------|------------------|------------|
+| **ShapeNet** | 3D models across multiple categories (furniture, vehicles, etc.). | 📝 Text, 🏗️ 3D Geometry, 🏗️ Shape Synthesis | [ShapeNet](http://shapenet.org/about) |
+| **BuildingNet** | Architectural structures for shape completion tasks. | 🏗️ 3D Geometry, 📝 Text | [BuildingNet](https://github.com/BuildingNet/BuildingNet) |
+| **Text2Shape** | Textual descriptions linked to ShapeNet categories. | 📝 Text-to-Shape Learning | [Text2Shape](https://text2shape.github.io/) |
+| **ShapeGlot** | Textual utterances describing differences between shapes. | 📝 Text-to-Shape Evaluation | [ShapeGlot](https://github.com/alters-mit/ShapeGlot) |
+| **Pix3D** | Chamfer Distance and F-Score evaluation for shape accuracy. | 🏗️ 3D Shape Accuracy Metrics | [Pix3D](https://github.com/xingyuansun/pix3d) |
+| **LAION-5B** | Image-text pairs for conditional diffusion training. | 🖼️ Image Embeddings, 🏗️ Shape Synthesis | [LAION-5B](https://laion.ai/) |
+| **COCO-Stuff** | Diverse textual descriptions for real-world 3D synthesis. | 📝 Text, 🖼️ Images | [COCO-Stuff](https://github.com/nightrome/cocostuff) |
+| **Flickr30K** | Real-world object generation using diverse descriptions. | 📝 Text-to-3D Synthesis | [Flickr30K](https://github.com/ubmdmg/Flickr30kEntities) |
+| **ModelNet40** | Evaluates 3D shape generation across 40 categories. | 📝 Text-to-Shape Benchmarks | [ModelNet40](https://modelnet.cs.princeton.edu/) |
+| **ShapeNetCore** | Annotated 3D models for geometry and texture testing. | 🏗️ 3D Geometry, 📝 Text | [ShapeNetCore](http://shapenet.org/about) |
+| **BlendSwap** | Realistic meshes with PBR materials. | 📝 Text-to-Mesh Synthesis | [BlendSwap](https://www.blendswap.com/) |
+| **InstructPix2Pix** | Guides 2D-based edits for 3D objects. | 🖼️ Image & Instruction-Based Guidance | [InstructPix2Pix](https://github.com/timothybrooks/instruct-pix2pix) |
+| **MagicBrush** | Refines texture and appearance in 3D content. | 🖼️ Image-Guided Appearance | [MagicBrush](https://github.com/OSU-NLP-Group/MagicBrush) |
+| **NeRF-Synthetic** | Sparse 2D images for 3D reconstruction. | 🖼️ Image-to-3D Synthesis | [NeRF-Synthetic](https://github.com/bmild/nerf) |
+
+
 ---
 
 ### 🤖 Models
