@@ -23,15 +23,14 @@ This repository is designed to collect and categorize papers, datasets, and reso
     - [🎯 Relevance and Accuracy](#-relevance-and-accuracy)
     - [🏃 Physical Plausibility and Interaction](#-physical-plausibility-and-interaction)
     - [⚡️ Efficiency and Computational Metrics](#-efficiency-and-computational)
-- [🕺 Techniques in Character Animation](#-techniques-in-character-animation)
-  - [👨 Face](#-face)
-  - [😃 Expression](#-expression)
-  - [🖼 Image](#-image)
-  - [👤 Avatar](#-avatar)
-  - [🤝 Gesture](#-gesture)
-  - [🎥 Motion](#-motion)
-  - [📦 Object](#-object)
-  - [🧵 Texture](#-texture)
+- [👨 Face](#-face)
+- [😃 Expression](#-expression)
+- [🖼 Image](#-image)
+- [👤 Avatar](#-avatar)
+- [🤝 Gesture](#-gesture)
+- [🎥 Motion](#-motion)
+- [📦 Object](#-object)
+- [🧵 Texture](#-texture)
 <!-- - [🔗 Citations](#-citations)
 - [📧 Contact](#-contact)
 - [⭐️ Star History](#-star-history) -->
@@ -237,46 +236,42 @@ These metrics evaluate the computational cost of generative models.
 
 ---
 
-## 🕺 Techniques in Character Animation
-
-Our survey categorizes the latest techniques into several key areas:
-
-### 👨 Face
+## 👨 Face
 Focuses on realistic face generation, facial reenactment, and attribute editing using GANs, diffusion models, and specialized frameworks.
 
 ### 🤖 Models
 
-### 😃 Expression
+## 😃 Expression
 Covers emotion-driven synthesis, facial expression retargeting, and multimodal methods that capture nuanced nonverbal cues.
 
 ### 🤖 Models
 
-### 🖼 Image
+## 🖼 Image
 Explores diffusion-based methods, VAEs, and other generative techniques to produce high-fidelity images and textures for animation backgrounds and elements.
 
 ### 🤖 Models
 
-### 👤 Avatar
+## 👤 Avatar
 Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digital representations with detailed facial expressions and body dynamics.
 
 ### 🤖 Models
 
-### 🤝 Gesture
+## 🤝 Gesture
 Examines methods for generating human-like gestures and co-speech movements, critical for interactive and immersive animations.
 
 ### 🤖 Models
 
-### 🎥 Motion
+## 🎥 Motion
 Highlights text-constrained motion generation techniques, including MotionGPT and diffusion frameworks, for creating smooth and realistic animation sequences.
 
 ### 🤖 Models
 
-### 📦 Object
+## 📦 Object
 Discusses approaches for text-to-3D object generation, such as Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting, to create realistic assets.
 
 ### 🤖 Models
 
-### 🧵 Texture
+## 🧵 Texture
 Focuses on methods for generating detailed surface textures that enhance the realism of 3D models, including text-guided synthesis and neural rendering techniques.
 
 ### 🤖 Models
