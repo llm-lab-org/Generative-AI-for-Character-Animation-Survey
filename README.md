@@ -288,13 +288,22 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 ### 🗂 Datasets
 
-
-| 🏷️ **Dataset** | 📊 **Key Features** | 🎭 **Modalities** | 🔗 **Reference** |
-|--------------|------------------|------------------|-----------------|
-| **TEAD (Text-Expression Aligned Dataset)** | Aligns text descriptions with emotion tags, AUs, and blend shape weights for text-to-face generation. |  📝 Text, 🎭 Facial Expressions, 🔷 Blend Shapes, 😊 AUs | [TEAD](https://github.com/HSMAabdellaoui/TEAD?tab=readme-ov-file) |
-| **BEAT** | 52-dimensional blend shape weights integrated with audio, emotion, and gesture modalities. |  🎭 Facial Expressions, 🎵 Audio, 🤖 Gesture  | [BEAT](https://pantomatrix.github.io/BEAT-Dataset/) |
-| **VOCASET** | High-fidelity 4D facial scans synchronized with speech data, enabling 3D facial animation from speech input. |  🎵 Audio, 🎭 4D Facial Scans | [VOCASET](https://voca.is.tue.mpg.de/)  |
-| **SHOW** | Combines video, audio, facial expressions, and pose data to generate 3D human motion from speech. |  🎥 Video, 🎵 Audio, 🎭 Facial Expressions, 🕺 Pose | [SHOW](https://talkshow.is.tue.mpg.de/)  |
+| 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
+|------------|------------------|------------------|------------|
+| **BEAT (Body-Expression-Audio-Text)** | 76 hours of speech, 52D facial blend shape weights, 30 speakers, 8 emotional styles, 4 languages. | 🎵 Audio, 🎭 Facial Expressions, 😃 Emotion, 🏃 Gesture, 📝 Text | [BEAT](https://pantomatrix.github.io/BEAT/) |
+| **MEAD (Multi-view Emotional Audio-visual Dataset)** | 60 actors in 8 emotions at 3 intensity levels, ~40 hours of 🎵 audio-visual clips per view. | 🎥 Video, 🎵 Audio, 😃 Emotion, 🎭 Facial Expressions | [MEAD](https://wywu.github.io/projects/MEAD/MEAD.html) |
+| **TEAD (Text-Expression Aligned Dataset)** | 50,000 quadruples with text, emotion tags, Action Units, and blend shape weights. | 📝 Text, 😃 Emotion, 🎭 Facial Expressions | - |
+| **JAFFE (Japanese Female Facial Expression)** | 213 images of 7 facial expressions posed by 10 Japanese female models, rated by 60 annotators. | 🖼️ Image, 🎭 Facial Expressions | [JAFFE](https://zenodo.org/records/3451524) |
+| **MMI Facial Expression** | 2900+ videos and high-resolution still images from 75 subjects. | 🎥 Video, 🖼️ Image, 🎭 Facial Expressions, 😃 Emotion | [MMI](https://mmifacedb.eu/) |
+| **Multiface** | High-quality face recordings of 13 identities with ~23,000 frames per subject, captured from 160 camera angles. | 🖼️ Image, 🎭 Facial Expressions, 🎵 Audio, 🏃 Pose | [Multiface](https://github.com/facebookresearch/multiface) |
+| **ICT FaceKit** | 4000 high-resolution facial scans from 79 subjects (ages 18-67), plus 99 full head scans with 26 expressions. | 🎭 3D Geometry, Facial Expressions, 🎭 Texture | [ICT FaceKit](https://github.com/ICT-VGL/ICT-FaceKit) |
+| **TikTok Dataset** | 300+ dance videos (10-15s each), ~100K extracted frames at 30fps with UV coordinates. | 🎥 Video, 🖼️ Image, 🏃 Pose | [TikTok Dataset](https://www.yasamin.page/hdnet_tiktok#h.jr9ifesshn7v) |
+| **Everybody Dance Now** | Long single-dancer videos for training and evaluation, includes self-filmed and YouTube videos. | 🎥 Video, 🏃 Pose | [Everybody Dance Now](https://carolineec.github.io/everybody_dance_now/) |
+| **Obama Weekly Footage** | 17 hours of footage (~2M frames) spanning 8 years. | 🎥 Video, 🎵 Audio | [Obama Weekly Footage](https://grail.cs.washington.edu/projects/AudioToObama/) |
+| **VoxCeleb2** | 1M+ utterances from 6,000+ speakers, collected from YouTube videos (61% male speakers). | 🎵 Audio, 🎥 Video | [VoxCeleb2](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html) |
+| **BIWI** | 15K+ images of 20 people recorded with Kinect while turning heads freely. | 🎭 3D Geometry, 🖼️ Image, 🏃 Pose, 😃 Emotion | [BIWI](https://paperswithcode.com/dataset/biwi-kinect-head-pose) |
+| **VOCASET** | 29 minutes of high-fidelity 4D scans at 60fps, synchronized with 🎵 audio; 12 speakers, 40 sequences per subject. | 🎥 4D Scans, 🎵 Audio | [VOCASET](https://voca.is.tue.mpg.de/) |
+| **SHOW (Synchronous Holistic Optimization in the Wild)** | SMPLX parameters for 4 persons reconstructed from videos; includes 88-frame motion clips. | 🎥 Video, 🎵 Audio, 🎭 Facial Expressions, 🏃 Pose | [SHOW](https://github.com/yhw-yhw/SHOW) |
 
 
 ### 🤖 Models
