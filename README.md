@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/your_eprint_number)
 
-This repository is designed to collect and categorize papers, datasets, and resources related to generative AI for character animation based on our survey. As advances in generative AI continue to transform animation—from realistic facial synthesis to dynamic gesture and motion generation—this resource will be continuously updated to serve as a comprehensive guide for researchers and practitioners.
+This repository is designed to collect and categorize papers, datasets, and resources related to generative AI for character animation based on our survey. As advances in generative AI continue to transform animation from realistic facial synthesis to dynamic gesture and motion generation, this resource will be continuously updated to serve as a comprehensive guide for researchers and practitioners.
 
 ---
 
