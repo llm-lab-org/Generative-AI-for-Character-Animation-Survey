@@ -257,24 +257,28 @@ Focuses on realistic face generation, facial reenactment, and attribute editing 
 
 ### 🗂 Datasets
 
+# 📊 Facial Datasets Overview
+
+This table provides an overview of various facial datasets, highlighting their key statistics, modalities, and links.
+
 | 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
 |-------------|------------------|------------------|-------------|
-| **RaFD** | More than 8,000 images of 67 models displaying eight facial expressions from five different angles. |  Images | [RaFD](https://rafd.socsci.ru.nl/) |
-| **MPIE** | Over 750,000 images with variations in facial expressions, head poses, and lighting. |  Images with metadata | [MPIE](https://www.cs.cmu.edu/afs/cs/project/PIE/MultiPie/Multi-Pie/Home.html) |
-| **VoxCeleb1** | 100,000+ utterances from 1,251 celebrities. |  Audio-Video (facial images from video clips) | [VoxCeleb1](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/) |
-| **VoxCeleb2** | Over 1 million utterances from 6,112 celebrities. |  Audio-Video (facial images from video clips) | [VoxCeleb2](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/) |
-| **CelebA-HQ** | 30,000 images at 1024×1024 resolution. |  Images | [CelebA-HQ](https://opendatalab.com/OpenDataLab/CelebA-HQ) |
-| **FaceForensics** | Over 1,000 video sequences with face manipulations. |  Video | [FaceForensics](https://justusthies.github.io/posts/faceforensics/) |
-| **300-VW** | 300+ videos of faces in diverse scenarios and lighting. |  Videos with facial landmarks | [300-VW](https://ibug.doc.ic.ac.uk/resources/300-VW/) |
-| **FFHQ** | 70,000 images capturing diverse facial features and environments. |  Facial Images | [FFHQ](https://www.computer.org/csdl/journal/tp/2021/12/08977347/1h2AHNHb9bW) |
-| **AffectNet** | 1M+ images annotated for 11 facial expressions and emotions. |  Image annotations for emotion | [AffectNet](http://mohammadmahoor.com/affectnet/) |
-| **M³ CelebA** | 150K+ facial images with semantic segmentation, facial landmarks, and multilingual captions. |  Face images with annotations | [M³ CelebA](https://huggingface.co/datasets/m3face/M3CelebA/viewer) |
-| **CUB** | 11,000+ images of 200 bird species with detailed annotations. |  Bird images with attributes | [CUB](https://www.vision.caltech.edu/datasets/cub_200_2011/) |
-| **CelebA-Dialog** | 202,599 face images annotated with 5 fine-grained attributes and captions. |  Facial images with textual annotations | [CelebA-Dialog](https://mmlab.ie.cuhk.edu.hk/projects/CelebA/CelebA_Dialog.html) |
-| **LS3D-W** | 230,000+ 3D facial landmarks dataset. |  Facial Images | [LS3D-W](https://www.adrianbulat.com/face-alignment) |
-| **MERL-RAV** | 19,000+ face images annotated with 68-point landmarks and head poses. |  Videos & audio with annotations | [MERL-RAV](https://github.com/abhi1kumar/MERL-RAV_dataset) |
-| **AFLW2000-3D** | 2,000 images with 68-point 3D facial landmarks. |  Facial images with 3D annotations | [AFLW2000-3D](https://github.com/tensorflow/datasets/blob/master/docs/catalog/aflw2k3d.md) |
-| **FaceScape** | 18K+ high-resolution 3D facial scans from 938 subjects with 20 expressions each. |  3D facial scans | [FaceScape](https://facescape.nju.edu.cn/) |
+| **RaFD** | More than 8,000 images of 67 models displaying eight facial expressions from five different angles. | 🖼️ Images | [RaFD](https://rafd.socsci.ru.nl/) |
+| **MPIE** | Over 750,000 images with variations in facial expressions, head poses, and lighting. | 🖼️ Images with metadata | [MPIE](https://www.cs.cmu.edu/afs/cs/project/PIE/MultiPie/Multi-Pie/Home.html) |
+| **VoxCeleb1** | 100,000+ utterances from 1,251 celebrities. | 🎥 Audio-Video (facial images from video clips) | [VoxCeleb1](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/) |
+| **VoxCeleb2** | Over 1 million utterances from 6,112 celebrities. | 🎥 Audio-Video (facial images from video clips) | [VoxCeleb2](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/) |
+| **CelebA-HQ** | 30,000 images at 1024×1024 resolution. | 🖼️ Images | [CelebA-HQ](https://opendatalab.com/OpenDataLab/CelebA-HQ) |
+| **FaceForensics** | Over 1,000 video sequences with face manipulations. | 🎥 Video | [FaceForensics](https://justusthies.github.io/posts/faceforensics/) |
+| **300-VW** | 300+ videos of faces in diverse scenarios and lighting. | 🎥 Videos with facial landmarks | [300-VW](https://ibug.doc.ic.ac.uk/resources/300-VW/) |
+| **FFHQ** | 70,000 images capturing diverse facial features and environments. | 🖼️ Facial Images | [FFHQ](https://www.computer.org/csdl/journal/tp/2021/12/08977347/1h2AHNHb9bW) |
+| **AffectNet** | 1M+ images annotated for 11 facial expressions and emotions. | 😃 Image annotations for emotion | [AffectNet](http://mohammadmahoor.com/affectnet/) |
+| **M³ CelebA** | 150K+ facial images with semantic segmentation, facial landmarks, and multilingual captions. | 🏷️ Face images with annotations | [M³ CelebA](https://huggingface.co/datasets/m3face/M3CelebA/viewer) |
+| **CUB** | 11,000+ images of 200 bird species with detailed annotations. | 🐦 Bird images with attributes | [CUB](https://www.vision.caltech.edu/datasets/cub_200_2011/) |
+| **CelebA-Dialog** | 202,599 face images annotated with 5 fine-grained attributes and captions. | 💬 Facial images with textual annotations | [CelebA-Dialog](https://mmlab.ie.cuhk.edu.hk/projects/CelebA/CelebA_Dialog.html) |
+| **LS3D-W** | 230,000+ 3D facial landmarks dataset. | 🖼️ Facial Images | [LS3D-W](https://www.adrianbulat.com/face-alignment) |
+| **MERL-RAV** | 19,000+ face images annotated with 68-point landmarks and head poses. | 🎥 Videos & audio with annotations | [MERL-RAV](https://github.com/abhi1kumar/MERL-RAV_dataset) |
+| **AFLW2000-3D** | 2,000 images with 68-point 3D facial landmarks. | 🏷️ Facial images with 3D annotations | [AFLW2000-3D](https://github.com/tensorflow/datasets/blob/master/docs/catalog/aflw2k3d.md) |
+| **FaceScape** | 18K+ high-resolution 3D facial scans from 938 subjects with 20 expressions each. | 📏 3D facial scans | [FaceScape](https://facescape.nju.edu.cn/) |
 
 
 ### 🤖 Models
@@ -287,10 +291,10 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 | 🏷️ **Dataset** | 📊 **Key Features** | 🎭 **Modalities** | 🔗 **Reference** |
 |--------------|------------------|------------------|-----------------|
-| **TEAD (Text-Expression Aligned Dataset)** | Aligns text descriptions with emotion tags, AUs, and blend shape weights for text-to-face generation. |  Text,  Facial Expressions,  Blend Shapes,  AUs | [TEAD](https://github.com/HSMAabdellaoui/TEAD?tab=readme-ov-file) |
-| **BEAT** | 52-dimensional blend shape weights integrated with audio, emotion, and gesture modalities. |  Facial Expressions,  Audio,  Gesture | [BEAT](https://pantomatrix.github.io/BEAT-Dataset/) |
-| **VOCASET** | High-fidelity 4D facial scans synchronized with speech data, enabling 3D facial animation from speech input. |  Audio,  4D Facial Scans | [VOCASET](https://voca.is.tue.mpg.de/)  |
-| **SHOW** | Combines video, audio, facial expressions, and pose data to generate 3D human motion from speech. |  Video,  Audio,  Facial Expressions,  Pose | [SHOW](https://talkshow.is.tue.mpg.de/)  |
+| **TEAD (Text-Expression Aligned Dataset)** | Aligns text descriptions with emotion tags, AUs, and blend shape weights for text-to-face generation. |  📝 Text, 🎭 Facial Expressions, 🔷 Blend Shapes, 😊 AUs | [TEAD](https://github.com/HSMAabdellaoui/TEAD?tab=readme-ov-file) |
+| **BEAT** | 52-dimensional blend shape weights integrated with audio, emotion, and gesture modalities. |  🎭 Facial Expressions, 🎵 Audio, 🤖 Gesture  | [BEAT](https://pantomatrix.github.io/BEAT-Dataset/) |
+| **VOCASET** | High-fidelity 4D facial scans synchronized with speech data, enabling 3D facial animation from speech input. |  🎵 Audio, 🎭 4D Facial Scans | [VOCASET](https://voca.is.tue.mpg.de/)  |
+| **SHOW** | Combines video, audio, facial expressions, and pose data to generate 3D human motion from speech. |  🎥 Video, 🎵 Audio, 🎭 Facial Expressions, 🕺 Pose | [SHOW](https://talkshow.is.tue.mpg.de/)  |
 
 
 ### 🤖 Models
