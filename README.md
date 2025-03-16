@@ -280,8 +280,11 @@ This table provides an overview of various facial datasets, highlighting their k
 | **AFLW2000-3D** | 2,000 images with 68-point 3D facial landmarks. | 🏷️ Facial images with 3D annotations | [AFLW2000-3D](https://github.com/tensorflow/datasets/blob/master/docs/catalog/aflw2k3d.md) |
 | **FaceScape** | 18K+ high-resolution 3D facial scans from 938 subjects with 20 expressions each. | 📏 3D facial scans | [FaceScape](https://facescape.nju.edu.cn/) |
 
+---
 
 ### 🤖 Models
+
+---
 
 ## 😃 Expression
 Covers emotion-driven synthesis, facial expression retargeting, and multimodal methods that capture nuanced nonverbal cues.
@@ -305,8 +308,11 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 | **VOCASET** | 29 minutes of high-fidelity 4D scans at 60fps, synchronized with 🎵 audio; 12 speakers, 40 sequences per subject. | 🎥 4D Scans, 🎵 Audio | [VOCASET](https://voca.is.tue.mpg.de/) |
 | **SHOW (Synchronous Holistic Optimization in the Wild)** | SMPLX parameters for 4 persons reconstructed from videos; includes 88-frame motion clips. | 🎥 Video, 🎵 Audio, 🎭 Facial Expressions, 🏃 Pose | [SHOW](https://github.com/yhw-yhw/SHOW) |
 
+---
 
 ### 🤖 Models
+
+---
 
 ## 🖼 Image
 Explores diffusion-based methods, VAEs, and other generative techniques to produce high-fidelity images and textures for animation backgrounds and elements.
@@ -325,8 +331,11 @@ Explores diffusion-based methods, VAEs, and other generative techniques to produ
 | **ShareGPT** | 100K highly descriptive image-caption pairs | 🖼️ Image-Text Pairs | [ShareGPT](https://huggingface.co/datasets/Lin-Chen/ShareGPT4V) |
 | **ADE20K** | 20,210 training images, 2,000 validation images, 3,000 test images | 🏙️ Scene Parsing, 🖼️ Images with Annotations | [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) |
 
+---
 
 ### 🤖 Models
+
+---
 
 ## 👤 Avatar
 Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digital representations with detailed facial expressions and body dynamics.
@@ -346,33 +355,51 @@ Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digi
 | **RenderMe-360** | 243M head frames from 500 identities; includes FLAME parameters, UV maps, action units, and textured meshes. | 🎥 Video, 🎭 2D/3D Facial Landmarks, 🔷 FLAME Parameters | [RenderMe-360](https://renderme-360.github.io/) |
 | **PuzzleIOI** | 41 subjects with nearly 1,000 Outfit-of-the-Day (OOTD) configurations; paired 3D body scans for partial images. | 🖼️ Image, 🏃 3D Body Models, 📝 Text Descriptions | [PuzzleIOI](https://puzzleavatar.is.tue.mpg.de/) |
 
+---
+
 ### 🤖 Models
+
+---
 
 ## 🤝 Gesture
 Examines methods for generating human-like gestures and co-speech movements, critical for interactive and immersive animations.
 
 ### 🗂 Datasets
 
+---
+
 ### 🤖 Models
+
+---
 
 ## 🎥 Motion
 Highlights text-constrained motion generation techniques, including MotionGPT and diffusion frameworks, for creating smooth and realistic animation sequences.
 
 ### 🗂 Datasets
 
+---
+
 ### 🤖 Models
+
+---
 
 ## 📦 Object
 Discusses approaches for text-to-3D object generation, such as Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting, to create realistic assets.
 
 ### 🗂 Datasets
 
+---
+
 ### 🤖 Models
+
+---
 
 ## 🧵 Texture
 Focuses on methods for generating detailed surface textures that enhance the realism of 3D models, including text-guided synthesis and neural rendering techniques.
 
 ### 🗂 Datasets
+
+---
 
 ### 🤖 Models
 
