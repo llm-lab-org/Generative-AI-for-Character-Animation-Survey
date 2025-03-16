@@ -300,6 +300,19 @@ Explores diffusion-based methods, VAEs, and other generative techniques to produ
 
 ### 🗂 Datasets
 
+| 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
+|------------|------------------|------------------|------------|
+| **LAION-5B** | 5.85 billion CLIP-filtered image-text pairs | 🖼️ Image-Text Pairs | [LAION-5B](https://laion.ai/blog/laion-5b/) |
+| **LAION-400M** | 400M English (image, text) pairs | 🖼️ Image-Text Pairs | [LAION-400M](https://laion.ai/blog/laion-400-open-dataset/) |
+| **LAION-Aesthetics v2** | 1.2B images with aesthetics scores (various thresholds from 4.5 to 6.5) | 🖼️ Image-Text Pairs | [LAION-Aesthetics v2](https://laion.ai/blog/laion-aesthetics/) |
+| **Open Images V7** | 9M images annotated with object labels, bounding boxes, segmentation masks, and visual relationships | 🖼️📏 Images with Annotations | [Open Images V7](https://storage.googleapis.com/openimages/web/index.html) |
+| **COYO** | 747M image-text pairs | 🖼️ Image-Text Pairs | [COYO](https://github.com/kakaobrain/coyo-dataset) |
+| **Conceptual Captions** | 3.3M images with descriptive captions | 🖼️ Image-Text Pairs | [Conceptual Captions](https://ai.google.com/research/ConceptualCaptions/) |
+| **COCO** | 330K images (200K labeled), 1.5M object instances, 80 object categories, 91 stuff categories, 5 captions per image, 250K people with key points | 🏷️ Object Detection, 🖼️ Segmentation, ✍️ Captions | [COCO](https://cocodataset.org) |
+| **ShareGPT** | 100K highly descriptive image-caption pairs | 🖼️ Image-Text Pairs | [ShareGPT](https://huggingface.co/datasets/Lin-Chen/ShareGPT4V) |
+| **ADE20K** | 20,210 training images, 2,000 validation images, 3,000 test images | 🏙️ Scene Parsing, 🖼️ Images with Annotations | [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) |
+
+
 ### 🤖 Models
 
 ## 👤 Avatar
