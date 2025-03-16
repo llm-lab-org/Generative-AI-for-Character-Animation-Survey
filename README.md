@@ -24,19 +24,19 @@ This repository is designed to collect and categorize papers, datasets, and reso
     - [🏃 Physical Plausibility and Interaction](#-physical-plausibility-and-interaction)
     - [⚡️ Efficiency and Computational Metrics](#-efficiency-and-computational)
 - [👨 Face](#-face)
-  -[📂 Datasets](#-datasets)
+  -[🗂 Datasets](#-datasets)
 - [😃 Expression](#-expression)
-  -[📂 Datasets](#-datasets-1)
+  -[🗂 Datasets](#-datasets-1)
 - [🖼 Image](#-image)
-  -[📂 Datasets](#-datasets-2)
+  -[🗂 Datasets](#-datasets-2)
 - [👤 Avatar](#-avatar)
-  -[📂 Datasets](#-datasets-3)
+  -[🗂 Datasets](#-datasets-3)
 - [🤝 Gesture](#-gesture)
-  -[📂 Datasets](#-datasets-4)
+  -[🗂 Datasets](#-datasets-4)
 - [🎥 Motion](#-motion)
-  -[📂 Datasets](#-datasets-5)
+  -[🗂 Datasets](#-datasets-5)
 - [📦 Object](#-object)
-  -[📂 Datasets](#-datasets-6)
+  -[🗂 Datasets](#-datasets-6)
 - [🧵 Texture](#-texture)
   -[🗂 Datasets](#-datasets-7)
 <!-- - [🔗 Citations](#-citations)
@@ -247,56 +247,56 @@ These metrics evaluate the computational cost of generative models.
 ## 👨 Face
 Focuses on realistic face generation, facial reenactment, and attribute editing using GANs, diffusion models, and specialized frameworks.
 
-### 🗂️ Datasets
+### 🗂 Datasets
 
 ### 🤖 Models
 
 ## 😃 Expression
 Covers emotion-driven synthesis, facial expression retargeting, and multimodal methods that capture nuanced nonverbal cues.
 
-### 🗂️ Datasets
+### 🗂 Datasets
 
 ### 🤖 Models
 
 ## 🖼 Image
 Explores diffusion-based methods, VAEs, and other generative techniques to produce high-fidelity images and textures for animation backgrounds and elements.
 
-### 🗂️ Datasets
+### 🗂 Datasets
 
 ### 🤖 Models
 
 ## 👤 Avatar
 Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digital representations with detailed facial expressions and body dynamics.
 
-### 🗂️ Datasets
+### 🗂 Datasets
 
 ### 🤖 Models
 
 ## 🤝 Gesture
 Examines methods for generating human-like gestures and co-speech movements, critical for interactive and immersive animations.
 
-### 🗂️ Datasets
+### 🗂 Datasets
 
 ### 🤖 Models
 
 ## 🎥 Motion
 Highlights text-constrained motion generation techniques, including MotionGPT and diffusion frameworks, for creating smooth and realistic animation sequences.
 
-### 🗂️ Datasets
+### 🗂 Datasets
 
 ### 🤖 Models
 
 ## 📦 Object
 Discusses approaches for text-to-3D object generation, such as Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting, to create realistic assets.
 
-### 🗂️ Datasets
+### 🗂 Datasets
 
 ### 🤖 Models
 
 ## 🧵 Texture
 Focuses on methods for generating detailed surface textures that enhance the realism of 3D models, including text-guided synthesis and neural rendering techniques.
 
-### 🗂️ Datasets
+### 🗂 Datasets
 
 ### 🤖 Models
 
