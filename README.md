@@ -257,10 +257,6 @@ Focuses on realistic face generation, facial reenactment, and attribute editing 
 
 ### 🗂 Datasets
 
-# 📊 Facial Datasets Overview
-
-This table provides an overview of various facial datasets, highlighting their key statistics, modalities, and links.
-
 | 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
 |-------------|------------------|------------------|-------------|
 | **RaFD** | More than 8,000 images of 67 models displaying eight facial expressions from five different angles. | 🖼️ Images | [RaFD](https://rafd.socsci.ru.nl/) |
