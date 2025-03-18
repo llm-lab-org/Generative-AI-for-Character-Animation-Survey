@@ -29,6 +29,8 @@ This repository is designed to collect and categorize papers, datasets, and reso
 - [😃 Expression](#-expression)
   - [🗂 Datasets](#-datasets-1)
   - [🤖 Models](#-models-2)
+    - [🎙 Speech-Driven & Multimodal Expression Generation](#-speech-driven--multimodal-expression-generation)
+    - [🔁 Expression Retargeting & Motion Transfer](#-expression-retargeting--motion-transfer)
 - [🖼 Image](#-image)
   - [🗂 Datasets](#-datasets-2)
   - [🤖 Models](#-models-3)
