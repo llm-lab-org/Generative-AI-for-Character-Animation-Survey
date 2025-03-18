@@ -516,83 +516,83 @@ Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digi
 
 #### 🔍 CLIP-Guided Models
 
-- **AvatarCLIP** [🔗]  
+- **AvatarCLIP** [🔗](https://hongfz16.github.io/projects/AvatarCLIP.html)   
   *A zero-shot framework for generating and animating 3D avatars from natural language descriptions. It uses a shape VAE for initial geometry generation guided by CLIP and integrates NeuS for high-quality geometry and photorealistic rendering. In the motion phase, candidate poses are selected via CLIP and a motion VAE synthesizes smooth motions.*
 
-- **DreamField** [🔗]  
+- **DreamField** [🔗](https://ajayj.com/dreamfields)  
   *Adapts NeRF for text-driven 3D object generation. While it facilitates text-to-3D synthesis, it struggles with capturing detailed geometry.*
 
-- **Text2Mesh** [🔗]  
+- **Text2Mesh** [🔗](https://threedle.github.io/text2mesh/)    
   *Stylizes existing meshes using CLIP guidance. It aims for text-driven mesh modifications but faces challenges with stability and flexibility when handling diverse text descriptions.*
 
 ---
 
 #### 🧩 Implicit Function-Based Models
 
-- **PIFu (Pixel-Aligned Implicit Function)** [🔗]  
+- **PIFu (Pixel-Aligned Implicit Function)** [🔗](https://shunsukesaito.github.io/PIFu/)  
   *Reconstructs detailed 3D surfaces from single-view 2D images by projecting 3D points into 2D space to extract pixel-aligned features via CNNs, which are then processed by an MLP for high-resolution surface reconstructions.*
 
-- **PI-FuHD** [🔗]  
+- **PIFuHD** [🔗](https://shunsukesaito.github.io/PIFuHD/)   
   *Enhances PIFu by incorporating multi-scale feature extraction, leading to improved global shape understanding and finer surface details.*
 
-- **ARCH (Animatable Reconstruction of Clothed Humans)** [🔗]  
+- **ARCH (Animatable Reconstruction of Clothed Humans)** [🔗](https://arxiv.org/abs/2004.04572)  
   *Reconstructs detailed 3D models of clothed individuals from single RGB images. It transforms poses into a canonical space using a parametric body model and employs an implicit surface representation to capture fine details such as clothing folds.*
 
-- **ARCH++** [🔗]  
+- **ARCH++** [🔗](https://arxiv.org/abs/2108.07845)    
   *An enhanced version of ARCH that refines geometry encoding and boosts clothing details to produce photorealistic, animatable avatars.*
 
-- **PaMIR (Parametric Model-Conditioned Implicit Representation)** [🔗]  
+- **PaMIR (Parametric Model-Conditioned Implicit Representation)** [🔗](https://arxiv.org/abs/2007.03858)    
   *Combines a parametric SMPL body model with an implicit surface representation to reconstruct 3D humans from single RGB images. It uses a depth-ambiguity-aware loss and refines SMPL parameters during inference for better alignment.*
 
-- **TADA (Text to Animatable Dynamic Avatar)** [🔗]  
+- **TADA (Text to Animatable Dynamic Avatar)** [🔗](https://tada.is.tue.mpg.de/)   
   *Generates high-fidelity, animatable 3D avatars directly from text prompts. It leverages an upsampled SMPL-X model and learnable displacements, optimizing geometry and texture via Score Distillation Sampling losses, with additional detail enhancement through partial mesh subdivision.*
 
-- **GETAvatar (Generative Textured Meshes for Animatable Human Avatars)** [🔗]  
+- **GETAvatar (Generative Textured Meshes for Animatable Human Avatars)** [🔗](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_GETAvatar_Generative_Textured_Meshes_for_Animatable_Human_Avatars_ICCV_2023_paper.pdf)    
   *Directly produces high-fidelity, explicitly textured 3D meshes. It represents human bodies using an articulated 3D mesh and generates a signed distance field (SDF) in canonical space, which is deformed to match the target shape and pose via SMPL-based transformations. A normal field trained on 3D scans enhances fine geometric details.*
 
-- **RodinHD** [🔗]  
+- **RodinHD** [🔗](https://rodinhd.github.io/)    
   *Creates 3D avatars from a single portrait image by constructing a detailed 3D blueprint (triplane) that captures the avatar’s shape, textures, and fine details. A shared neural decoder then converts this blueprint into an image, with a cascaded diffusion model generating new triplanes based on the portrait.*
 
 ---
 
 #### 🎥 NeRF-Based Methods
 
-- **HumanNeRF** [🔗]  
+- **HumanNeRF** [🔗](https://grail.cs.washington.edu/projects/humannerf/)  
   *Pioneers the use of deformation fields for dynamic human models from monocular images, enabling the mapping of points from observation to canonical space.*
 
-- **Neural Body**  
+- **Neural Body** [🔗](https://zju3dv.github.io/neuralbody/)   
   *Introduces structured latent codes anchored to SMPL model vertices, processed via SparseConvNet, to regularize dynamic human modeling.*
 
-- **Neural Human Performer**  
+- **Neural Human Performer** [🔗](https://youngjoongunc.github.io/nhp/)    
   *Captures dynamic human information directly in the observation space using a skeletal feature bank and transformer modules.*
 
-- **Vid2Avatar** [🔗]  
+- **Vid2Avatar** [🔗](https://moygcc.github.io/vid2avatar/)   
   *Jointly models human subjects and scene backgrounds using two separate neural radiance fields, enhancing realism in avatar generation.*
 
-- **DreamHuman** [🔗]  
+- **DreamHuman** [🔗](https://dream-human.github.io/)    
   *Generates animatable 3D human avatars from textual descriptions by combining NeRF with the imGHUM body model. It uses human body shape statistics for anatomical correctness and incorporates semantic zooming for detailed regions such as faces and hands.*
 
 ---
 
 #### 🌈 Diffusion-Based Methods
 
-- **Personalized Avatar Scene (PAS)** [🔗 [12]]  
+- **Personalized Avatar Scene (PAS)** [🔗]  
   *Generates customized 3D avatars in various poses and scenes based on text descriptions. It employs a diffusion-based transformer to generate 3D body poses conditioned on text.*
 
-- **3D Head Avatar via 3DMM & Diffusion** [🔗 [18]]  
+- **3D Head Avatar via 3DMM & Diffusion** [🔗](https://arxiv.org/abs/2307.04859)    
   *Combines a parametric 3D Morphable Model of the head (using FLAME [153]) with diffusion models to jointly optimize geometry and texture for generating 3D head avatars from text prompts.*
 
-- **Make-Your-Anchor System** [🔗 [114]]  
+- **Make-Your-Anchor** [🔗](https://arxiv.org/abs/2403.16510)    
   *Introduces a novel approach for generating 2D anchor-style avatars capable of realistic full-body motion and expression. It utilizes a Structure-Guided Diffusion Model (SGDM) to ensure coherent and expressive avatar generation.*
 
 ---
 
 #### 🔀 Hybrid Methods
 
-- **DreamAvatar** [🔗 [32]]  
+- **DreamAvatar** [🔗](https://yukangcao.github.io/DreamAvatar/)   
   *Integrates shape priors, diffusion models, and NeRF architecture within a dual-observation-space (DOS) framework. Leveraging SMPL for anatomical guidance and employing joint optimization with specialized head-focused VSD loss (using ControlNet [310]), it ensures structurally consistent avatars with controllable shape modifications. While it outperforms methods like DreamWaltz [111] in geometric accuracy, it currently lacks animation capabilities and may inherit biases from pretrained diffusion models.*
 
-- **DreamWaltz** [🔗 [111]]  
+- **DreamWaltz** [🔗](https://idea-research.github.io/DreamWaltz/)   
   *Referenced as a comparative baseline, this model illustrates limitations in animation capabilities and inherited biases when compared to hybrid approaches like DreamAvatar.*
 
 ---
