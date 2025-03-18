@@ -36,7 +36,7 @@ This repository is designed to collect and categorize papers, datasets, and reso
   - [🤖 Models](#-models-3)
     - [🔧 Fine-Tuning & Regularization](#-fine-tuning--regularization)
     - [✂ Image Editing & Disentanglement](#-image-editing--disentanglement)
-    - [🤖 Multimodal Conversations & Visual Understanding](#-multimodal-conversations--visual-understanding)
+    - [👽 Multimodal Conversations & Visual Understanding](#-multimodal-conversations--visual-understanding)
 - [👤 Avatar](#-avatar)
   - [🗂 Datasets](#-datasets-3)
   - [🤖 Models](#-models-4)
@@ -473,7 +473,7 @@ Explores diffusion-based methods, VAEs, and other generative techniques to produ
 - **Targeted Debiasing & Content Moderation via Text Descriptions** [🔗]  
   *Enables targeted debiasing, removal of potentially copyrighted content, and moderation of offensive concepts using only text descriptions. This editing methodology can be applied to any linear projection layer by replacing pre-trained weights while preserving key concepts.*
 
-#### 🤖 Multimodal Conversations & Visual Understanding
+#### 👽 Multimodal Conversations & Visual Understanding
 
 - **ChatGPT-Based Multimodal Integration** [🔗]  
   *Built directly on ChatGPT, this model incorporates various Vision Foundation Models (VFMs) via a Prompt Manager. By decomposing complex queries into sub-problems with chain-of-thought reasoning, it effectively bridges conversational AI with advanced image generation.*
