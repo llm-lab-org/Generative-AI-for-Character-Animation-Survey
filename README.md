@@ -285,7 +285,7 @@ Focuses on realistic face generation, facial reenactment, and attribute editing 
 - **StyleGAN** [🔗](https://arxiv.org/abs/1812.04948)  
   *A generative adversarial network known for producing high-quality, photorealistic images. It serves as a backbone for many face generation and editing tasks.*
 
-- **ResNet** [🔗](https://arxiv.org/abs/1512.03385)
+- **ResNet** [🔗](https://arxiv.org/abs/1512.03385)  
   *A convolutional neural network architecture that provides robust feature extraction, often used as a backbone in face generation pipelines.*
 
 - **Dual-Generator (DG)** [🔗](https://openaccess.thecvf.com/content/CVPR2022/papers/Hsu_Dual-Generator_Face_Reenactment_CVPR_2022_paper.pdf)  
@@ -294,7 +294,7 @@ Focuses on realistic face generation, facial reenactment, and attribute editing 
 - **Feature Disentanglement and Identity Transfer Model** [🔗](https://www.sciencedirect.com/science/article/abs/pii/S002002552200682X)  
   *An approach that bypasses the need for pre-trained structural priors by using a Feature Disentanglement module with Feature Displacement Fields (FDF) and an Identity Transfer (IdT) module based on self-attention to align source identity with target attributes.*
 
-- **Unified Neural Face Reenactment Pipeline** [🔗](https://openaccess.thecvf.com/content/ACCV2020/papers/Le_Minh_Ngo_Unified_Application_of_Style_Transfer_for_Face_Swapping_and_Reenactment_ACCV_2020_paper.pdf)
+- **Unified Neural Face Reenactment Pipeline** [🔗](https://openaccess.thecvf.com/content/ACCV2020/papers/Le_Minh_Ngo_Unified_Application_of_Style_Transfer_for_Face_Swapping_and_Reenactment_ACCV_2020_paper.pdf)  
   *A pipeline that leverages a 3D shape model to obtain disentangled representations of pose, expression, and identity, mapping changes in these parameters to the latent space of a fine-tuned StyleGAN2 for accurate face reenactment.*
 
 - **Controllable 3D Generative Adversarial Face Model** [🔗](https://arxiv.org/abs/2208.14263)  
@@ -306,13 +306,13 @@ Focuses on realistic face generation, facial reenactment, and attribute editing 
 - **IricGAN (Information Retention and Intensity Control GAN)** [🔗](https://www.researchgate.net/publication/361317388_Face_editing_based_on_facial_recognition_features)  
   *A face editing method designed to preserve identity and semantic details while enabling controlled modifications of facial attributes. It features a Hierarchical Feature Combination (HFC) module and an Attribute Regression Module (ARM) for smooth intensity control.*
 
-- **GSmoothFace** [🔗](https://arxiv.org/abs/2312.07385)
+- **GSmoothFace** [🔗](https://arxiv.org/abs/2312.07385)  
   *A speech-driven talking face generation framework based on fine-grained 3D face modeling. It addresses lip synchronization and generalizability across speakers by introducing bias-based cross-attention and a Morphology Augmented Face Blending (MAFB) module.*
 
-- **Adaptive Latent Editing Model** [🔗](https://arxiv.org/abs/2307.07790)
+- **Adaptive Latent Editing Model** [🔗](https://arxiv.org/abs/2307.07790)  
   *A face editing approach that uses adaptive and nonlinear latent space transformations to flexibly learn transformations for complex, conditional edits while maintaining image quality and realism.*
 
-- **StyleT2I** [🔗](https://arxiv.org/abs/2203.15799)
+- **StyleT2I** [🔗](https://arxiv.org/abs/2203.15799)  
   *A text-to-image synthesis model that improves compositionality and fidelity. It uses a CLIP-guided Contrastive Loss and a Text-to-Direction module to align StyleGAN’s latent codes with text descriptions, enhancing attribute control.*
 
 - **Hybrid Neural-Graphics Face Generation Model** [🔗](https://dl.acm.org/doi/10.1145/3588432.3591563)  
@@ -327,7 +327,7 @@ Focuses on realistic face generation, facial reenactment, and attribute editing 
 - **AnyFace** [🔗](https://arxiv.org/abs/2203.15334)  
   *The first free-style text-to-face synthesis model capable of handling open-world text descriptions. It features a two-stream architecture that decouples text-to-face generation from face reconstruction, using CLIP-based cross-modal distillation and a Diverse Triplet Loss to enhance alignment and diversity.*
 
-- **HiFace** [🔗](https://arxiv.org/abs/2303.11225)
+- **HiFace** [🔗](https://arxiv.org/abs/2303.11225)  
   *A 3D face reconstruction model that decouples static (e.g., skin texture) and dynamic (e.g., wrinkles) details using its SD-DeTail Module. It extracts shape and detail coefficients via ResNet-50 and uses MLPs with AdaIN to generate detailed displacement maps for realistic reconstructions and animations.*
 
 ---
@@ -360,31 +360,31 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 #### 🎙 Speech-Driven & Multimodal Expression Generation
 
-- **Joint Audio-Text Model for 3D Facial Animation** [🔗](https://arxiv.org/abs/2112.02214)
+- **Joint Audio-Text Model for 3D Facial Animation** [🔗](https://arxiv.org/abs/2112.02214)  
   *Integrates a GPT-2-based text encoder with a dilated convolution audio encoder to improve upper-face expressiveness and lip synchronization. Lacks head and gaze control.*
 
-- **VOCA** [🔗](https://arxiv.org/abs/1905.03079)
+- **VOCA** [🔗](https://arxiv.org/abs/1905.03079)  
   *A speech-driven facial animation model used as a baseline for lip synchronization and expressiveness.*
 
 - **MeshTalk** [🔗](https://arxiv.org/abs/2104.08223)  
   *A model for speech-driven 3D facial animation, serving as a comparison baseline for upper-face motion and expressiveness.*
 
-- **CSTalk** [🔗](https://arxiv.org/abs/2404.18604) 
+- **CSTalk** [🔗](https://arxiv.org/abs/2404.18604)  
   *Employs a transformer-based encoder to capture correlations across facial regions, enhancing emotional speech-driven animation; limited to five discrete emotions.*
 
 - **ExpCLIP** [🔗](https://arxiv.org/abs/2308.14448)  
   *Aligns text, image, and expression embeddings via CLIP encoders, enabling expressive speech-driven facial animation from text/image prompts by leveraging the TEAD dataset and Expression Prompt Augmentation.*
 
-- **Style-Content Disentangled Expression Model** [🔗](https://arxiv.org/abs/2412.14496)
+- **Style-Content Disentangled Expression Model** [🔗](https://arxiv.org/abs/2412.14496)  
   *Enhances personalization in facial animation by disentangling style and content representations, thereby improving identity retention and transition smoothness. (Compared to FaceFormer.)*
 
-- **FaceFormer** [🔗](https://arxiv.org/abs/2112.05329)
+- **FaceFormer** [🔗](https://arxiv.org/abs/2112.05329)  
   *A speech-driven facial animation model noted for its audio-visual synchronization, used as a baseline for comparison.*
 
 - **AdaMesh** [🔗](https://arxiv.org/abs/2310.07236) 
   *Introduces an Expression Adapter (MoLoRA-enhanced) and a Pose Adapter (retrieval-based) for personalized speech-driven facial animation, achieving improved expressiveness, diversity, and synchronization compared to models such as GeneFace and Imitator.*
 
-- **FaceXHuBERT** [🔗](https://galib360.github.io/FaceXHuBERT/)
+- **FaceXHuBERT** [🔗](https://galib360.github.io/FaceXHuBERT/)  
   *Explores disentangling emotional expressiveness through multimodal representations as part of advanced speech-driven facial animation.*
 
 - **FaceDiffuser** [🔗](https://arxiv.org/abs/2309.11306)  
