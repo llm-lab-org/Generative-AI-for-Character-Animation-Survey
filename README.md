@@ -360,34 +360,34 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 #### 🎙 Speech-Driven & Multimodal Expression Generation
 
-- **Joint Audio-Text Model for 3D Facial Animation** [🔗]  
+- **Joint Audio-Text Model for 3D Facial Animation** [🔗](https://arxiv.org/abs/2112.02214)
   *Integrates a GPT-2-based text encoder with a dilated convolution audio encoder to improve upper-face expressiveness and lip synchronization. Lacks head and gaze control.*
 
-- **VOCA** [🔗]  
+- **VOCA** [🔗](https://arxiv.org/abs/1905.03079)
   *A speech-driven facial animation model used as a baseline for lip synchronization and expressiveness.*
 
-- **MeshTalk** [🔗]  
+- **MeshTalk** [🔗](https://arxiv.org/abs/2104.08223)  
   *A model for speech-driven 3D facial animation, serving as a comparison baseline for upper-face motion and expressiveness.*
 
-- **CSTalk** [🔗]  
+- **CSTalk** [🔗](https://arxiv.org/abs/2404.18604) 
   *Employs a transformer-based encoder to capture correlations across facial regions, enhancing emotional speech-driven animation; limited to five discrete emotions.*
 
-- **ExpCLIP** [🔗]  
+- **ExpCLIP** [🔗](https://arxiv.org/abs/2308.14448)  
   *Aligns text, image, and expression embeddings via CLIP encoders, enabling expressive speech-driven facial animation from text/image prompts by leveraging the TEAD dataset and Expression Prompt Augmentation.*
 
-- **Style-Content Disentangled Expression Model** [🔗]  
+- **Style-Content Disentangled Expression Model** [🔗](https://arxiv.org/abs/2412.14496)
   *Enhances personalization in facial animation by disentangling style and content representations, thereby improving identity retention and transition smoothness. (Compared to FaceFormer.)*
 
-- **FaceFormer** [🔗]  
+- **FaceFormer** [🔗](https://arxiv.org/abs/2112.05329)
   *A speech-driven facial animation model noted for its audio-visual synchronization, used as a baseline for comparison.*
 
-- **AdaMesh** [🔗]  
+- **AdaMesh** [🔗](https://arxiv.org/abs/2310.07236) 
   *Introduces an Expression Adapter (MoLoRA-enhanced) and a Pose Adapter (retrieval-based) for personalized speech-driven facial animation, achieving improved expressiveness, diversity, and synchronization compared to models such as GeneFace and Imitator.*
 
-- **FaceXHuBERT** [🔗]  
+- **FaceXHuBERT** [🔗](https://galib360.github.io/FaceXHuBERT/)
   *Explores disentangling emotional expressiveness through multimodal representations as part of advanced speech-driven facial animation.*
 
-- **FaceDiffuser** [🔗]  
+- **FaceDiffuser** [🔗](https://arxiv.org/abs/2309.11306)  
   *Utilizes stochastic approaches to enhance motion variability and disentangle emotional expressiveness in facial animation.*
 
 
