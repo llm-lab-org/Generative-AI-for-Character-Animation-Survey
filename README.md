@@ -280,6 +280,54 @@ Focuses on realistic face generation, facial reenactment, and attribute editing 
 
 ### 🤖 Models
 
+- **StyleGAN** [🔗](https://arxiv.org/abs/1812.04948)  
+  *A generative adversarial network known for producing high-quality, photorealistic images. It serves as a backbone for many face generation and editing tasks.*
+
+- **ResNet** [🔗](https://arxiv.org/abs/1512.03385)
+  *A convolutional neural network architecture that provides robust feature extraction, often used as a backbone in face generation pipelines.*
+
+- **Dual-Generator (DG)** [🔗](https://openaccess.thecvf.com/content/CVPR2022/papers/Hsu_Dual-Generator_Face_Reenactment_CVPR_2022_paper.pdf)  
+  *A large-pose face reenactment model composed of two modules: the ID-Preserving Shape Generator (IDSG), which uses 3D landmark detection to capture local shape variations, and the Reenacted Face Generator (RFG), based on StarGAN2, to produce the final output.*
+
+- **Feature Disentanglement and Identity Transfer Model** [🔗](https://www.sciencedirect.com/science/article/abs/pii/S002002552200682X)  
+  *An approach that bypasses the need for pre-trained structural priors by using a Feature Disentanglement module with Feature Displacement Fields (FDF) and an Identity Transfer (IdT) module based on self-attention to align source identity with target attributes.*
+
+- **Unified Neural Face Reenactment Pipeline** [🔗](https://openaccess.thecvf.com/content/ACCV2020/papers/Le_Minh_Ngo_Unified_Application_of_Style_Transfer_for_Face_Swapping_and_Reenactment_ACCV_2020_paper.pdf)
+  *A pipeline that leverages a 3D shape model to obtain disentangled representations of pose, expression, and identity, mapping changes in these parameters to the latent space of a fine-tuned StyleGAN2 for accurate face reenactment.*
+
+- **Controllable 3D Generative Adversarial Face Model** [🔗](https://arxiv.org/abs/2208.14263)  
+  *A model that employs a Supervised Auto-Encoder (SAE) to disentangle identity and expression into separate latent spaces, using a Conditional GAN (cGAN) for smooth and controllable expression intensity.*
+
+- **AlbedoGAN** [🔗](https://openaccess.thecvf.com/content/WACV2024/papers/Rai_Towards_Realistic_Generative_3D_Face_Models_WACV_2024_paper.pdf)  
+  *A self-supervised 3D generative face model that synthesizes high-resolution albedo and detailed 3D geometry. It refines facial textures (e.g., wrinkles) via a mesh refinement displacement map integrated with the FLAME model, and leverages CLIP for text-guided editing.*
+
+- **IricGAN (Information Retention and Intensity Control GAN)** [🔗](https://www.researchgate.net/publication/361317388_Face_editing_based_on_facial_recognition_features)  
+  *A face editing method designed to preserve identity and semantic details while enabling controlled modifications of facial attributes. It features a Hierarchical Feature Combination (HFC) module and an Attribute Regression Module (ARM) for smooth intensity control.*
+
+- **GSmoothFace** [🔗](https://arxiv.org/abs/2312.07385)
+  *A speech-driven talking face generation framework based on fine-grained 3D face modeling. It addresses lip synchronization and generalizability across speakers by introducing bias-based cross-attention and a Morphology Augmented Face Blending (MAFB) module.*
+
+- **Adaptive Latent Editing Model** [🔗](https://arxiv.org/abs/2307.07790)
+  *A face editing approach that uses adaptive and nonlinear latent space transformations to flexibly learn transformations for complex, conditional edits while maintaining image quality and realism.*
+
+- **StyleT2I** [🔗](https://arxiv.org/abs/2203.15799)
+  *A text-to-image synthesis model that improves compositionality and fidelity. It uses a CLIP-guided Contrastive Loss and a Text-to-Direction module to align StyleGAN’s latent codes with text descriptions, enhancing attribute control.*
+
+- **Hybrid Neural-Graphics Face Generation Model** [🔗](https://dl.acm.org/doi/10.1145/3588432.3591563)  
+  *A model that combines neural networks (using StyleGAN2 for texture and background synthesis) with fixed-function graphics components (such as a differentiable renderer and the FLAME 3D head model) to achieve interpretable control over facial attributes.*
+
+- **M3Face** [🔗](https://arxiv.org/abs/2402.02369)  
+  *A framework leveraging multimodal and multilingual inputs for both face generation and editing. It uses the Muse model to generate segmentation masks or landmarks from text and applies ControlNet architectures to refine the results, streamlining the process into a single step.*
+
+- **GuidedStyle** [🔗](https://arxiv.org/abs/2012.11856)  
+  *A framework for semantic face editing on StyleGAN that employs a pre-trained attribute classifier as a knowledge network and sparse attention to guide layer-specific modifications, ensuring that only targeted facial features are changed.*
+
+- **AnyFace** [🔗](https://arxiv.org/abs/2203.15334)  
+  *The first free-style text-to-face synthesis model capable of handling open-world text descriptions. It features a two-stream architecture that decouples text-to-face generation from face reconstruction, using CLIP-based cross-modal distillation and a Diverse Triplet Loss to enhance alignment and diversity.*
+
+- **HiFace** [🔗](https://arxiv.org/abs/2303.11225)
+  *A 3D face reconstruction model that decouples static (e.g., skin texture) and dynamic (e.g., wrinkles) details using its SD-DeTail Module. It extracts shape and detail coefficients via ResNet-50 and uses MLPs with AdaIN to generate detailed displacement maps for realistic reconstructions and animations.*
+
 ---
 
 ## 😃 Expression
