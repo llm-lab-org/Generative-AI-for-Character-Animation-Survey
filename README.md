@@ -449,16 +449,16 @@ Explores diffusion-based methods, VAEs, and other generative techniques to produ
 - **Spectral Shift Fine-Tuning** [🔗](https://arxiv.org/abs/2305.18670)   
   *Introduces a compact parameter space called “spectral shift” for diffusion model fine-tuning. It reduces overfitting and storage inefficiency while achieving comparable or superior results in both single- and multi-subject generation. The method also employs the Cut Mix-Unmix data augmentation technique for improved multi-subject quality and acts as a regularizer enabling applications like single-image editing.*
 
-- **Control via Zero Convolutions (ControlNet)** [🔗](https://arxiv.org/abs/2302.05543) 
+- **Control via Zero Convolutions (ControlNet)** [🔗](https://arxiv.org/abs/2302.05543)  
   *Addresses the limited spatial control of text-to-image models by locking large pre-trained diffusion models and reusing their deep encoding layers as a robust backbone. Connected via “zero convolutions” (zero-initialized convolution layers), this approach progressively grows parameters from zero to prevent harmful noise during fine-tuning, thereby facilitating diverse conditional controls.*
 
 
 #### ✂ Image Editing & Disentanglement
 
-- **Lightweight Disentanglement for Image Editing** [🔗](https://ieeexplore.ieee.org/document/10175586) 
+- **Lightweight Disentanglement for Image Editing** [🔗](https://ieeexplore.ieee.org/document/10175586)  
   *Explores the inherent disentanglement properties of stable diffusion models. By partially replacing text embeddings from a style-neutral description with one that reflects the desired style, a lightweight algorithm (optimizing only 50 parameters) is introduced for improved style matching and content preservation—outperforming more complex fine-tuning baselines.*
 
-- **SmartEdit** [🔗](https://openaccess.thecvf.com/content/CVPR2024/papers/Huang_SmartEdit_Exploring_Complex_Instruction-based_Image_Editing_with_Multimodal_Large_Language_CVPR_2024_paper.pdf) 
+- **SmartEdit** [🔗](https://openaccess.thecvf.com/content/CVPR2024/papers/Huang_SmartEdit_Exploring_Complex_Instruction-based_Image_Editing_with_Multimodal_Large_Language_CVPR_2024_paper.pdf)  
   *Frames image editing as a supervised learning problem by generating a paired training dataset of text editing instructions with before/after images. Built on the Stable Diffusion framework, it successfully handles challenging edits such as object replacement, seasonal changes, background modifications, and alterations of material attributes or artistic mediums.*
 
 - **Classifier-Free Guidance** [🔗](https://arxiv.org/pdf/2207.12598)  
