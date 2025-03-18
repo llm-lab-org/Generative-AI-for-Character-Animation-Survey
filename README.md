@@ -34,6 +34,9 @@ This repository is designed to collect and categorize papers, datasets, and reso
 - [🖼 Image](#-image)
   - [🗂 Datasets](#-datasets-2)
   - [🤖 Models](#-models-3)
+    - [🔧 Fine-Tuning & Regularization]
+    - [✂ Image Editing & Disentanglement]
+    - [🤖 Multimodal Conversations & Visual Understanding] 
 - [👤 Avatar](#-avatar)
   - [🗂 Datasets](#-datasets-3)
   - [🤖 Models](#-models-4)
@@ -439,6 +442,50 @@ Explores diffusion-based methods, VAEs, and other generative techniques to produ
 ---
 
 ### 🤖 Models
+
+
+#### 🔧 Fine-Tuning & Regularization
+
+- **Spectral Shift Fine-Tuning** [🔗]  
+  *Introduces a compact parameter space called “spectral shift” for diffusion model fine-tuning. It reduces overfitting and storage inefficiency while achieving comparable or superior results in both single- and multi-subject generation. The method also employs the Cut Mix-Unmix data augmentation technique for improved multi-subject quality and acts as a regularizer enabling applications like single-image editing.*
+
+- **Control via Zero Convolutions (ControlNet)** [🔗]  
+  *Addresses the limited spatial control of text-to-image models by locking large pre-trained diffusion models and reusing their deep encoding layers as a robust backbone. Connected via “zero convolutions” (zero-initialized convolution layers), this approach progressively grows parameters from zero to prevent harmful noise during fine-tuning, thereby facilitating diverse conditional controls.*
+
+
+#### ✂ Image Editing & Disentanglement
+
+- **Lightweight Disentanglement for Image Editing** [🔗]  
+  *Explores the inherent disentanglement properties of stable diffusion models. By partially replacing text embeddings from a style-neutral description with one that reflects the desired style, a lightweight algorithm (optimizing only 50 parameters) is introduced for improved style matching and content preservation—outperforming more complex fine-tuning baselines.*
+
+- **Instruction-Based Image Editing Diffusion Model** [🔗]  
+  *Frames image editing as a supervised learning problem by generating a paired training dataset of text editing instructions with before/after images. Built on the Stable Diffusion framework, it successfully handles challenging edits such as object replacement, seasonal changes, background modifications, and alterations of material attributes or artistic mediums.*
+
+- **Classifier-Free Guidance with Content Seed & Patch-Based Fine-Tuning** [🔗]  
+  *Employs a modified classifier-free guidance strategy in two ways: by introducing model-based classifier-free guidance and by planting a content “seed” early during denoising. Coupled with a patch-based fine-tuning strategy on latent diffusion models (LDMs), this approach enables generation at arbitrary resolutions while leveraging large pre-trained models.*
+
+- **Null Embedding Optimization for High-Fidelity Reconstructions** [🔗]  
+  *Observes that DDIM inversion provides a good starting point but struggles with classifier-free guidance. By optimizing the unconditional null embedding used in classifier-free guidance, this method achieves high-fidelity reconstructions without additional tuning of the model or conditional embeddings, thereby preserving editing capabilities.*
+
+- **Unified Diffusion Model Editing Algorithm** [🔗]  
+  *Follows a three-stage approach: (i) optimizing text embeddings to match a given image, (ii) fine-tuning diffusion models for improved image alignment, and (iii) linearly interpolating between optimized and target text embeddings. This unified algorithm enables precise editing of diffusion models, aiming to make them more responsible and beneficial.*
+
+- **Targeted Debiasing & Content Moderation via Text Descriptions** [🔗]  
+  *Enables targeted debiasing, removal of potentially copyrighted content, and moderation of offensive concepts using only text descriptions. This editing methodology can be applied to any linear projection layer by replacing pre-trained weights while preserving key concepts.*
+
+#### 🤖 Multimodal Conversations & Visual Understanding
+
+- **ChatGPT-Based Multimodal Integration** [🔗]  
+  *Built directly on ChatGPT, this model incorporates various Vision Foundation Models (VFMs) via a Prompt Manager. By decomposing complex queries into sub-problems with chain-of-thought reasoning, it effectively bridges conversational AI with advanced image generation.*
+
+- **Multimodal LLM with AlignerNet** [🔗]  
+  *Comprises a multimodal large language model (MLLM) for enhanced multimodal perception. An accompanying AlignerNet bridges the MLLM to the diffusion U-Net image decoder, enabling coherent integration of textual and visual information.*
+
+- **KOSMOS-G**  
+  *Offers seamless concept-level guidance from interleaved input to the image decoder. Serving as an alternative to CLIP, it facilitates effective image generation by guiding the diffusion process with interleaved multimodal cues.*
+
+- **Multimodal Reasoning & Action Paradigm** [🔗]  
+  *Presents a unified approach that synergizes multimodal reasoning and action to tackle complex visual understanding tasks. Extensive zero-shot experiments demonstrate its capabilities in multi-image reasoning, multi-hop document understanding, and open-world concept comprehension.*
 
 ---
 
