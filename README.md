@@ -49,7 +49,7 @@ This repository is designed to collect and categorize papers, datasets, and reso
   - [🗂 Datasets](#-datasets-4)
   - [🤖 Models](#-models-5)
     - [🛠 Traditional & Parametric Approaches](#-traditional--parametric-approaches)
-    - [🤖 Deep Learning-Based Models](#-deep-learning-based-models)
+    - [🧠 Deep Learning-Based Models](#-deep-learning-based-models)
     - [🚀 Transformer-Based Models](#-transformer-based-models)
 - [🎥 Motion](#-motion)
   - [🗂 Datasets](#-datasets-5)
@@ -633,7 +633,7 @@ Examines methods for generating human-like gestures and co-speech movements, cri
   *Generates detailed hand and finger gestures by blending a set of predefined base shapes using weighted interpolation, enabling fine-grained control and smooth transitions.*
 
 
-### 🤖 Deep Learning-Based Models
+### 🧠 Deep Learning-Based Models
 
 - **GestureGAN** [🔗 [256]]  
   *Employs a GAN-based generator-discriminator framework to synthesize realistic gesture sequences conditioned on audio inputs, capturing dynamic hand gestures effectively.*
