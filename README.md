@@ -48,9 +48,9 @@ This repository is designed to collect and categorize papers, datasets, and reso
 - [🤝 Gesture](#-gesture)
   - [🗂 Datasets](#-datasets-4)
   - [🤖 Models](#-models-5)
-    - [🛠 Traditional & Parametric Approaches]
-    - [🤖 Deep Learning-Based Models]
-    - [🚀 Transformer-Based Models]
+    - [🛠 Traditional & Parametric Approaches](#-traditional--parametric-approaches)
+    - [🤖 Deep Learning-Based Models](#-deep-learning-based-models)
+    - [🚀 Transformer-Based Models](#-transformer-based-models)
 - [🎥 Motion](#-motion)
   - [🗂 Datasets](#-datasets-5)
   - [🤖 Models](#-models-6)
