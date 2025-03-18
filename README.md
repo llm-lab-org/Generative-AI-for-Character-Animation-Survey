@@ -393,31 +393,29 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 #### 🔁 Expression Retargeting & Motion Transfer
 
-- **Neural Face Rigging (NFR)** [🔗]  
+- **Neural Face Rigging (NFR)** [🔗](https://arxiv.org/abs/2305.08296)  
   *Automates 3D mesh rigging by encoding interpretable deformation parameters, enabling fine-grained facial expression transfer.*
 
-- **MagicPose** [🔗]  
+- **MagicPose** [🔗](https://arxiv.org/abs/2311.12052)  
   *Leverages diffusion models for 2D facial expression retargeting, balancing identity preservation and motion control through Multi-Source Attention and Pose ControlNet.*
 
-- **DiffSHEG** [🔗]  
+- **DiffSHEG** [🔗](https://arxiv.org/abs/2401.04747)  
   *Pioneers joint 3D facial expression and gesture synthesis with speech-driven alignment, employing Fast Out-Painting-based Partial Autoregressive Sampling (FOPPAS) for seamless, real-time motion generation.*
 
-- **DreamPose** [🔗]  
+- **DreamPose** [🔗](https://grail.cs.washington.edu/projects/dreampose/)   
   *A baseline model for 2D facial expression retargeting used for comparison with MagicPose.*
 
-- **Disco** [🔗]  
+- **Disco** [🔗](https://arxiv.org/abs/2307.00040)  
   *Serves as a comparison baseline in 2D facial expression retargeting, noted for its identity retention and generalization capabilities.*
 
-- **TalkSHOW** [🔗]  
+- **TalkSHOW** [🔗](https://talkshow.is.tue.mpg.de/)  
   *A speech-driven facial animation model referenced as a baseline for comparison with DiffSHEG.*
 
-- **LS3DCG** [🔗]  
+- **LS3DCG** [🔗](https://openaccess.thecvf.com/content/CVPR2024/papers/Chen_DiffSHEG_A_Diffusion-Based_Approach_for_Real-Time_Speech-driven_Holistic_3D_Expression_CVPR_2024_paper.pdf)   
   *A model for 3D facial expression and gesture synthesis used as a baseline when comparing motion realism and synchronization.*
 
-- **DiffuseStyleGesture** [🔗]  
+- **DiffuseStyleGesture** [🔗](https://arxiv.org/abs/2305.04919)  
   *Referenced as a baseline model for facial expression and gesture synthesis in comparison to DiffSHEG.*
-
----
 
 ---
 
