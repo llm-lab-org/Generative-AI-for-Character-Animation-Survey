@@ -356,7 +356,7 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 ### 🤖 Models
 
-#### 🎙️ Speech-Driven & Multimodal Expression Generation
+#### 🎙 Speech-Driven & Multimodal Expression Generation
 
 - **Joint Audio-Text Model for 3D Facial Animation** [🔗 [64]]  
   *Integrates a GPT-2-based text encoder with a dilated convolution audio encoder to improve upper-face expressiveness and lip synchronization. Lacks head and gaze control.*
