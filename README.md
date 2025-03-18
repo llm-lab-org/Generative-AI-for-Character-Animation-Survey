@@ -54,10 +54,10 @@ This repository is designed to collect and categorize papers, datasets, and reso
 - [🎥 Motion](#-motion)
   - [🗂 Datasets](#-datasets-5)
   - [🤖 Models](#-models-6)
-    - [🔤 Language-to-Pose Models]
-    - [📦 Variational Auto-Encoder (VAE) Based Models]
-    - [🗝 VQ-VAE Based Models]
-    - [🌈 Diffusion-Based Models]
+    - [🔤 Language-to-Pose Models](#-language-to-pose-models)
+    - [📦 Variational Auto-Encoder (VAE) Based Models](#-variational-auto-encoder-vae-based-models)
+    - [🗝 VQ-VAE Based Models](#-vq-vae-based-models)
+    - [🌈 Diffusion-Based Models](#-diffusion-based-models)
 - [📦 Object](#-object)
   - [🗂 Datasets](#-datasets-6)
   - [🤖 Models](#-models-7)
