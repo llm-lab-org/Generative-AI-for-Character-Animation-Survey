@@ -40,11 +40,11 @@ This repository is designed to collect and categorize papers, datasets, and reso
 - [👤 Avatar](#-avatar)
   - [🗂 Datasets](#-datasets-3)
   - [🤖 Models](#-models-4)
-    - [🔍 CLIP-Guided Models]
-    - [🧩 Implicit Function-Based Models]
-    - [🎥 NeRF-Based Methods]
-    - [🌈 Diffusion-Based Methods]
-    - [🔀 Hybrid Methods]
+    - [🔍 CLIP-Guided Models](#-clip-guided-models)
+    - [🧩 Implicit Function-Based Models](#-implicit-function-based-models)
+    - [🎥 NeRF-Based Methods](#-nerf-based-methods)
+    - [🌈 Diffusion-Based Methods](#-diffusion-based-methods)
+    - [🔀 Hybrid Methods](#-hybrid-methods)
 - [🤝 Gesture](#-gesture)
   - [🗂 Datasets](#-datasets-4)
   - [🤖 Models](#-models-5)
