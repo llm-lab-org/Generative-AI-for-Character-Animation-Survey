@@ -34,9 +34,9 @@ This repository is designed to collect and categorize papers, datasets, and reso
 - [🖼 Image](#-image)
   - [🗂 Datasets](#-datasets-2)
   - [🤖 Models](#-models-3)
-    - [🔧 Fine-Tuning & Regularization]
-    - [✂ Image Editing & Disentanglement]
-    - [🤖 Multimodal Conversations & Visual Understanding] 
+    - [🔧 Fine-Tuning & Regularization](#-fine-tuning--regularization)
+    - [✂ Image Editing & Disentanglement](#-image-editing--disentanglement)
+    - [🤖 Multimodal Conversations & Visual Understanding](#-multimodal-conversations--visual-understanding)
 - [👤 Avatar](#-avatar)
   - [🗂 Datasets](#-datasets-3)
   - [🤖 Models](#-models-4)
