@@ -626,94 +626,94 @@ Examines methods for generating human-like gestures and co-speech movements, cri
 
 ### 🛠 Traditional & Parametric Approaches
 
-- **Parameter-Based Procedural Animation** [🔗 [161]]  
+- **Parameter-Based Procedural Animation** [🔗]  
   *Uses high-level control parameters (e.g., emotion, speech intensity, rhythm) to select and interpolate predefined keyframes, yielding smooth and coherent gesture sequences.*
 
-- **Blendshape Models** [🔗 [148]]  
+- **Blendshape Models** [🔗]  
   *Generates detailed hand and finger gestures by blending a set of predefined base shapes using weighted interpolation, enabling fine-grained control and smooth transitions.*
 
 
 ### 🧠 Deep Learning-Based Models
 
-- **GestureGAN** [🔗 [256]]  
+- **GestureGAN** [🔗]  
   *Employs a GAN-based generator-discriminator framework to synthesize realistic gesture sequences conditioned on audio inputs, capturing dynamic hand gestures effectively.*
 
-- **Speech2Gesture** [🔗 [78]]  
+- **Speech2Gesture** [🔗]  
   *Generates co-speech gestures directly from speech features using LSTM/RNN architectures, effectively modeling temporal dependencies between speech and gesture.*
 
-- **StyleGestures** [🔗 [7]]  
+- **StyleGestures** [🔗]  
   *Utilizes an encoder-decoder architecture with style tokens and Transformers to capture individual speaker styles, enabling personalized gesture synthesis.*
 
-- **Audio-Driven Adversarial Gesture Generation** [🔗 [326]]  
+- **Audio-Driven Adversarial Gesture Generation** [🔗]  
   *Combines GANs with Conditional Variational Autoencoders (CVAE) to align audio and motion features in a shared latent space, resulting in nuanced, audio-driven gestures.*
 
-- **GestureDiffuCLIP** [🔗 [9]]  
+- **GestureDiffuCLIP** [🔗]  
   *Leverages a diffusion process guided by CLIP for semantic alignment to iteratively refine gesture sequences, producing highly expressive gestures.*
 
-- **ZeroEGGS** [🔗 [76]]  
+- **ZeroEGGS** [🔗]  
   *Implements a zero-shot paradigm for generating gestures based solely on speech, using example-based learning to generalize across unseen gestural styles.*
 
-- **GestureMaster** [🔗 [323]]  
+- **GestureMaster** [🔗]  
   *Utilizes a graph neural network (GNN) framework to model spatial and temporal dependencies in gesture sequences, enhancing naturalistic hand and body gesture synthesis.*
 
-- **ExpressGesture** [🔗 [70]]  
+- **ExpressGesture** [🔗]  
   *Integrates emotion recognition with gesture generation pipelines, creating gestures that reflect both the content of speech and underlying sentiment.*
 
-- **MocapNET** [🔗 [211]]  
+- **MocapNET** [🔗]  
   *Bridges traditional motion capture with neural synthesis by combining 2D pose estimation and 3D gesture reconstruction using multimodal motion capture datasets.*
 
-- **CSMP** [🔗 [56]]  
+- **CSMP** [🔗]  
   *A diffusion-based co-speech gesture generation model that leverages joint text and audio representations to capture intricate inter-modal relationships.*
 
-- **ZS-MSTM** [🔗 [67]]  
+- **ZS-MSTM** [🔗]  
   *Introduces a zero-shot style transfer method for gesture animation through adversarial disentanglement, separating style and content features for effective style transfer across speakers.*
 
 
 ### 🚀 Transformer-Based Models
 
-- **Gesticulator** [🔗 [139]]  
+- **Gesticulator** [🔗]  
   *Employs a multimodal Transformer architecture to generate contextually relevant gestures conditioned on both text and audio inputs, aligning with co-speech dynamics.*
 
-- **Mix-StAGE** [🔗 [4]]  
+- **Mix-StAGE** [🔗]  
   *Uses an attention-based encoder-decoder with a style encoder and mixed spatial-temporal attention mechanisms to capture dynamic, expressive gestures.*
 
-- **SAGA (Style and Grammar-Aware Gesture Generation)** [🔗 [267]]  
+- **SAGA (Style and Grammar-Aware Gesture Generation)** [🔗]  
   *Combines an LSTM-based encoder-decoder with a Transformer-based grammar encoder to align gestures accurately with linguistic content, integrating both style and grammatical cues.*
 
-- **Cross-Modal Transformer** [🔗 [289]]  
+- **Cross-Modal Transformer** [🔗]  
   *Leverages cross-attention mechanisms to fuse diverse modalities (text, audio, video), enhancing the coherence and contextual alignment of generated gestures.*
 
-- **DiM-Gesture** [🔗 [304]]  
+- **DiM-Gesture** [🔗]  
   *Introduces an adaptive layer normalization mechanism (Mamba-2) to adjust to different speakers, focusing on generating realistic co-speech gestures from audio.*
 
-- **AMUSE** [🔗 [46]]  
+- **AMUSE** [🔗]  
   *Utilizes a disentangled latent diffusion technique to separate emotional expressions from gestures, enabling control over emotional aspects via a multi-stage training pipeline.*
 
-- **FreeTalker** [🔗 [291]]  
+- **FreeTalker** [🔗]  
   *Employs a diffusion-based framework with classifier-free guidance and a generative prior (DoubleTake) to produce natural transitions between gesture clips, extending beyond co-speech gestures.*
 
-- **CoCoGesture** [🔗 [212]]  
+- **CoCoGesture** [🔗]  
   *Addresses long-sequence gesture generation with a Transformer-based diffusion model that uses a large dataset (GES-X) and a mixture-of-experts framework to effectively align gestures with human speech.*
 
-- **DiffuseStyleGestures** [🔗 [290]]  
+- **DiffuseStyleGestures** [🔗]  
   *Integrates audio, text, speaker IDs, and seed gestures within a diffusion-based approach to produce stylistically diverse co-speech gesture outputs.*
 
-- **DiffuseStyleGesture+** [🔗 [292]]  
+- **DiffuseStyleGesture+** [🔗]  
   *Builds upon DiffuseStyleGestures by further refining gesture synthesis through advanced multimodal integration and specialized attention mechanisms for personalized outputs.*
 
-- **ViTPose** [🔗 [288]]  
+- **ViTPose** [🔗]  
   *Applies Vision Transformers to human pose estimation, providing a robust foundation for gesture synthesis by accurately capturing pose dynamics.*
 
-- **Gesture Motion Graphs** [🔗 [319]]  
+- **Gesture Motion Graphs** [🔗]  
   *Utilizes graph-based modeling for few-shot gesture reenactment, effectively representing motion sequences and their dependencies.*
 
-- **DiffSHEG** [🔗 [39]]  
+- **DiffSHEG** [🔗]  
   *Adopts a diffusion-based approach for real-time speech-driven 3D expression and gesture generation, leveraging joint text and audio representations for coherent outputs.*
 
-- **C2G2** [🔗 [120]]  
+- **C2G2** [🔗]  
   *Emphasizes controllability in co-speech gesture generation by using modular components to handle different aspects of gesture synthesis.*
 
-- **DiffuGesture** [🔗 [318]]  
+- **DiffuGesture** [🔗]  
   *Focuses on generating gestures for two-person dialogues with specialized diffusion techniques tailored for interactive and conversational settings.*
 
 ---
