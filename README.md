@@ -525,7 +525,6 @@ Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digi
 - **Text2Mesh** [🔗](https://threedle.github.io/text2mesh/)    
   *Stylizes existing meshes using CLIP guidance. It aims for text-driven mesh modifications but faces challenges with stability and flexibility when handling diverse text descriptions.*
 
----
 
 #### 🧩 Implicit Function-Based Models
 
@@ -553,8 +552,6 @@ Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digi
 - **RodinHD** [🔗](https://rodinhd.github.io/)    
   *Creates 3D avatars from a single portrait image by constructing a detailed 3D blueprint (triplane) that captures the avatar’s shape, textures, and fine details. A shared neural decoder then converts this blueprint into an image, with a cascaded diffusion model generating new triplanes based on the portrait.*
 
----
-
 #### 🎥 NeRF-Based Methods
 
 - **HumanNeRF** [🔗](https://grail.cs.washington.edu/projects/humannerf/)  
@@ -572,7 +569,6 @@ Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digi
 - **DreamHuman** [🔗](https://dream-human.github.io/)    
   *Generates animatable 3D human avatars from textual descriptions by combining NeRF with the imGHUM body model. It uses human body shape statistics for anatomical correctness and incorporates semantic zooming for detailed regions such as faces and hands.*
 
----
 
 #### 🌈 Diffusion-Based Methods
 
@@ -585,7 +581,6 @@ Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digi
 - **Make-Your-Anchor** [🔗](https://arxiv.org/abs/2403.16510)    
   *Introduces a novel approach for generating 2D anchor-style avatars capable of realistic full-body motion and expression. It utilizes a Structure-Guided Diffusion Model (SGDM) to ensure coherent and expressive avatar generation.*
 
----
 
 #### 🔀 Hybrid Methods
 
