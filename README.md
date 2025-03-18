@@ -356,6 +356,67 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 ### 🤖 Models
 
+#### 🎙️ Speech-Driven & Multimodal Expression Generation
+
+- **Joint Audio-Text Model for 3D Facial Animation** [🔗 [64]]  
+  *Integrates a GPT-2-based text encoder with a dilated convolution audio encoder to improve upper-face expressiveness and lip synchronization. Lacks head and gaze control.*
+
+- **VOCA** [🔗 [53]]  
+  *A speech-driven facial animation model used as a baseline for lip synchronization and expressiveness.*
+
+- **MeshTalk** [🔗 [223]]  
+  *A model for speech-driven 3D facial animation, serving as a comparison baseline for upper-face motion and expressiveness.*
+
+- **CSTalk** [🔗 [156]]  
+  *Employs a transformer-based encoder to capture correlations across facial regions, enhancing emotional speech-driven animation; limited to five discrete emotions.*
+
+- **ExpCLIP** [🔗 [321]]  
+  *Aligns text, image, and expression embeddings via CLIP encoders, enabling expressive speech-driven facial animation from text/image prompts by leveraging the TEAD dataset and Expression Prompt Augmentation.*
+
+- **Style-Content Disentangled Expression Model** [🔗 [22]]  
+  *Enhances personalization in facial animation by disentangling style and content representations, thereby improving identity retention and transition smoothness. (Compared to FaceFormer.)*
+
+- **FaceFormer** [🔗 [65]]  
+  *A speech-driven facial animation model noted for its audio-visual synchronization, used as a baseline for comparison.*
+
+- **AdaMesh** [🔗 [41]]  
+  *Introduces an Expression Adapter (MoLoRA-enhanced) and a Pose Adapter (retrieval-based) for personalized speech-driven facial animation, achieving improved expressiveness, diversity, and synchronization compared to models such as GeneFace and Imitator.*
+
+- **FaceXHuBERT** [🔗 [93]]  
+  *Explores disentangling emotional expressiveness through multimodal representations as part of advanced speech-driven facial animation.*
+
+- **FaceDiffuser** [🔗 [249]]  
+  *Utilizes stochastic approaches to enhance motion variability and disentangle emotional expressiveness in facial animation.*
+
+
+#### 🔁 Expression Retargeting & Motion Transfer
+
+- **Neural Face Rigging (NFR)** [🔗 [213]]  
+  *Automates 3D mesh rigging by encoding interpretable deformation parameters, enabling fine-grained facial expression transfer.*
+
+- **MagicPose** [🔗 [36]]  
+  *Leverages diffusion models for 2D facial expression retargeting, balancing identity preservation and motion control through Multi-Source Attention and Pose ControlNet.*
+
+- **DiffSHEG** [🔗 [39]]  
+  *Pioneers joint 3D facial expression and gesture synthesis with speech-driven alignment, employing Fast Out-Painting-based Partial Autoregressive Sampling (FOPPAS) for seamless, real-time motion generation.*
+
+- **DreamPose** [🔗 [127]]  
+  *A baseline model for 2D facial expression retargeting used for comparison with MagicPose.*
+
+- **Disco** [🔗 [272]]  
+  *Serves as a comparison baseline in 2D facial expression retargeting, noted for its identity retention and generalization capabilities.*
+
+- **TalkSHOW** [🔗 [295]]  
+  *A speech-driven facial animation model referenced as a baseline for comparison with DiffSHEG.*
+
+- **LS3DCG** [🔗 [90]]  
+  *A model for 3D facial expression and gesture synthesis used as a baseline when comparing motion realism and synchronization.*
+
+- **DiffuseStyleGesture** [🔗 [290]]  
+  *Referenced as a baseline model for facial expression and gesture synthesis in comparison to DiffSHEG.*
+
+---
+
 ---
 
 ## 🖼 Image
