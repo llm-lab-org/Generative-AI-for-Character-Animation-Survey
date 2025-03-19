@@ -745,67 +745,67 @@ Highlights text-constrained motion generation techniques, including MotionGPT an
 
 #### 🔤 Language-to-Pose Models
 
-- **Language2Pose** [🔗]  
+- **Language2Pose** [🔗](https://chahuja.com/language2pose/)    
   *Generates 3D human poses directly from natural language. It employs two encoders (for text and 3D motion) that map inputs into a joint embedding space, and a decoder that produces a fixed-length motion sequence by minimizing the distance between corresponding text and motion embeddings.*
 
-- **MotionClip** [🔗]  
+- **MotionClip** [🔗](https://guytevet.github.io/motionclip-page/)   
   *An end-to-end pipeline for motion generation based on an encoder-decoder transformer. The model extracts a high-level motion representation and uses multiple loss functions—comparing joint orientations, velocities, and image-text groundings via CLIP—to enhance motion quality.*
 
 
 #### 📦 Variational Auto-Encoder (VAE) Based Models
 
-- **Action-Conditioned Transformer VAE** [🔗]  
+- **ACTOR** [🔗](https://arxiv.org/abs/2104.05670)   
   *Generates diverse and realistic 3D human motions conditioned on action labels. This approach uses a transformer-based VAE to encode actions and poses into a Gaussian latent space, allowing sampling of varied motions for the same action prompt.*
 
-- **TEMOS (Text-To-Motions)** [🔗]  
+- **TEMOS (Text-To-Motions)** [🔗](https://arxiv.org/abs/2204.14109)   
   *A text-conditioned generative model that uses a transformer-based VAE architecture with two symmetric encoders (for motion and text). It learns a diverse latent space by aligning text and pose embeddings to generate meaningful SMPL body motions.*
 
-- **TeachTemporalActionComposition** [🔗]  
+- **Teach** [🔗](https://arxiv.org/abs/2209.04066)    
   *Transforms sequences of text descriptions into SMPL body motions. The model operates non-autoregressively within individual actions and autoregressively across action sequences by leveraging a past-conditioned text encoder that combines historical motion features with current text input.*
 
-- **Guo et al. Framework** [🔗]  
+- **Generating Diverse and Natural 3D Human Motions from Text** [🔗](https://ericguo5513.github.io/text-to-motion/)    
   *Generates 3D human motions from textual descriptions by first pre-training an auto-encoder (using convolutional and deconvolutional layers) and then utilizing a temporal VAE with three recurrent networks (prior, posterior, and generator) to produce motion snippets.*
 
-- **TMR Framework** [🔗]  
+- **TMR** [🔗](https://mathis.petrovich.fr/tmr/)    
   *Enhances transformer-based text-to-motion generation by mapping motion and text embeddings into a joint space. Dual transformer encoders are used for each modality, and cosine similarity between embeddings is maximized for positive pairs while filtering out negatives via MPNet similarity.*
 
 
 #### 🗝 VQ-VAE Based Models
 
-- **T2M GPT** [🔗]  
+- **T2M GPT** [🔗](https://mael-zys.github.io/T2M-GPT/)    
   *The first model to apply VQ-VAE for motion generation. It learns a discrete representation (codebook) of motion and formulates motion generation as an autoregressive token prediction task, conditioned on text encoded by CLIP.*
 
-- **DiverseMotion** [🔗]  
+- **DiverseMotion** [🔗](https://arxiv.org/abs/2309.01372)    
   *Builds upon T2M GPT by discarding the autoregressive generation in favor of a diffusion process to diversify motion outputs. It employs CLIP for text encoding and Hierarchy Semantic Aggregation (HSA) to generate a richer holistic text embedding.*
 
-- **MoMask** [🔗]  
+- **MoMask** [🔗](https://ericguo5513.github.io/momask/)    
   *Uses a hierarchical VQ-VAE to quantize motion sequences into discrete tokens over multiple layers. A masked transformer predicts missing tokens (similar to BERT), and a residual transformer refines these predictions to incorporate fine motion details.*
 
-- **T2LM Long-Term 3D Human Motion** [🔗]  
+- **T2LM Long-Term 3D Human Motion** [🔗](https://arxiv.org/abs/2406.00636)    
   *Transforms sequences of text descriptions into 3D motion sequences using a 1D-convolutional VQ-VAE and a transformer-based text encoder. This method generates smooth transitions between actions, outperforming earlier techniques like TEACH.*
 
-- **MotionGPT** [🔗]  
+- **MotionGPT** [🔗](https://motion-gpt.github.io/)    
   *Generates human motion from text by leveraging a pre-trained motion VQ-VAE alongside a large language model (LLM). The LLM is fine-tuned with LoRA to generate motion tokens that the VQ-VAE decoder transforms into motion sequences, significantly speeding up training.*
 
 
 #### 🌈 Diffusion-Based Models
 
-- **Flame** [🔗]  
+- **Flame** [🔗](https://kakaobrain.github.io/flame/)    
   *Employs a transformer-based motion decoder within a diffusion framework. It conditions on text using cross-attention (with text embeddings from RoBERTA) and incorporates special tokens for motion length and diffusion time steps. The model is optimized with a hybrid loss combining diffusion noise loss and a variational lower bound loss, with classifier-free guidance during inference.*
 
-- **MotionDiffuse** [🔗]  
+- **MotionDiffuse** [🔗](https://mingyuan-zhang.github.io/projects/MotionDiffuse.html)    
   *Similar to Flame but with slight architectural variations: it selects a random diffusion time step and divides the motion sequence into sub-intervals for time-varying conditioning. It utilizes efficient attention modules and optimizes using mean squared error on the noise prediction.*
 
-- **HMDM** [🔗]  
+- **HMDM** [🔗](https://www.researchgate.net/publication/389662135_IT-HMDM_Invertible_Transformer_for_Human_Motion_Diffusion_Model)    
   *A diffusion-based model with a fixed motion sequence length that leverages CLIP’s text encoder. It introduces additional loss functions (e.g., position, foot, and velocity losses) defined on the reconstructed motion signal, rather than just the noise, to improve temporal consistency and motion fidelity.*
 
-- **Azadi et al. Framework** [🔗]  
+- **Make-An-Animation** [🔗](https://azadis.github.io/make-an-animation/)    
   *Proposes a two-stage diffusion framework for text-to-3D motion generation. The model pre-trains on a large-scale static pose dataset using a UNet backbone and T5 text encoder, then fine-tunes on motion datasets, generating the entire motion sequence concurrently for improved smoothness.*
 
-- **GMD (Guided Motion Diffusion)** [🔗]  
+- **GMD (Guided Motion Diffusion)** [🔗](https://korrawe.github.io/gmd-project/)    
   *Focuses on incorporating spatial (trajectory) constraints into the diffusion process. The method uses a two-stage pipeline that first emphasizes ground location guidance and then propagates sparse guidance gradients across neighboring frames to enhance overall motion consistency.*
 
-- **OmniControl** [🔗]  
+- **OmniControl** [🔗](https://neu-vi.github.io/omnicontrol/)    
   *Extends spatial guidance by cumulatively summing relative pelvis locations to infer global positions. It also introduces realism guidance, propagating control signals from keyframes and the pelvis to other joints for coherent, natural motion generation.*
 
 ---
