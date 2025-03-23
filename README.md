@@ -74,7 +74,7 @@ This repository is designed to collect and categorize papers, datasets, and reso
 
 Generative AI is transforming various fields, including art, gaming, and animation. One of its most significant applications lies in animation, where advances in artificial intelligence—such as foundation models and diffusion models—have driven remarkable progress, significantly reducing the time and cost of content creation. Characters are central components of animations involving elements such as motion, emotions, gestures, and facial expressions. Rapid and wide-ranging developments in AI-driven animation technologies have made it challenging to maintain an overarching view of progress in the field, highlighting the need for a comprehensive survey to integrate and contextualize these advancements.
 
-This survey offers a comprehensive review of the state-of-the-art in generative AI applications for animated character design and behavior, integrating a wide range of aspects often examined in isolation (e.g., avatars, gestures, and facial expressions). Unlike previous studies, it provides a unified perspective covering all major applications of generative AI in character animation. The survey begins with foundational concepts and introduces evaluation metrics tailored to this domain, then explores key areas such as facial animation, image synthesis, avatar generation, gesture modeling, motion synthesis, expression rendering, and texture generation. Finally, it addresses the main challenges and outlines future research directions, offering a roadmap to advance AI-driven character animation technologies. This survey aims to serve as a resource for researchers and developers in generative AI for animation and related fields.
+This survey offers a comprehensive review of the state-of-the-art generative AI applications for animated character design and behavior, integrating a wide range of aspects often examined in isolation (e.g., avatars, gestures, and facial expressions). Unlike previous studies, it provides a unified perspective covering all major applications of generative AI in character animation. The survey begins with foundational concepts and introduces evaluation metrics tailored to this domain, then explores key areas such as facial animation, image synthesis, avatar generation, gesture modeling, motion synthesis, expression rendering, and texture generation. Finally, it addresses the main challenges and outlines future research directions, offering a roadmap to advance AI-driven character animation technologies. This survey aims to serve as a resource for researchers and developers in generative AI for animation and related fields.
 
 ---
 
@@ -104,7 +104,7 @@ This survey offers a comprehensive review of the state-of-the-art in generative 
 - **Inception** [🔗](https://arxiv.org/abs/1409.4842)  
   *Introduces multi-scale processing via parallel convolutions (1x1, 3x3, 5x5) for improved feature extraction.*
 - **VGG** [🔗](https://arxiv.org/abs/1409.1556)  
-  *Evaluates the impact of increasing CNN depth using very small (3x3) filters to capture complex visual features.*
+  *Evaluate the impact of increasing CNN depth using very small (3x3) filters to capture complex visual features.*
 - **ResNet** [🔗](https://arxiv.org/abs/1512.03385)  
   *Introduces residual learning with shortcut connections to enable training of very deep networks (up to 152 layers).*
 - **Vision Transformers (ViTs)** [🔗](https://arxiv.org/abs/2010.11929)  
