@@ -352,22 +352,23 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 ### 🗂 Datasets
 
-| 🏷️ **Name** | 📊 **Statistics** | 🎭 **Modalities** | 🔗 **Link** |
-|------------|------------------|------------------|------------|
-| **BEAT (Body-Expression-Audio-Text)** | 76 hours of speech, 52D facial blend shape weights, 30 speakers, 8 emotional styles, 4 languages. | 🎵 Audio, 🎭 Facial Expressions, 😃 Emotion, 🏃 Gesture, 📝 Text | [BEAT](https://pantomatrix.github.io/BEAT/) |
-| **MEAD (Multi-view Emotional Audio-visual Dataset)** | 60 actors in 8 emotions at 3 intensity levels, ~40 hours of 🎵 audio-visual clips per view. | 🎥 Video, 🎵 Audio, 😃 Emotion, 🎭 Facial Expressions | [MEAD](https://wywu.github.io/projects/MEAD/MEAD.html) |
-| **TEAD (Text-Expression Aligned Dataset)** | 50,000 quadruples with text, emotion tags, Action Units, and blend shape weights. | 📝 Text, 😃 Emotion, 🎭 Facial Expressions | - |
-| **JAFFE (Japanese Female Facial Expression)** | 213 images of 7 facial expressions posed by 10 Japanese female models, rated by 60 annotators. | 🖼️ Image, 🎭 Facial Expressions | [JAFFE](https://zenodo.org/records/3451524) |
-| **MMI Facial Expression** | 2900+ videos and high-resolution still images from 75 subjects. | 🎥 Video, 🖼️ Image, 🎭 Facial Expressions, 😃 Emotion | [MMI](https://mmifacedb.eu/) |
-| **Multiface** | High-quality face recordings of 13 identities with ~23,000 frames per subject, captured from 160 camera angles. | 🖼️ Image, 🎭 Facial Expressions, 🎵 Audio, 🏃 Pose | [Multiface](https://github.com/facebookresearch/multiface) |
-| **ICT FaceKit** | 4000 high-resolution facial scans from 79 subjects (ages 18-67), plus 99 full head scans with 26 expressions. | 🎭 3D Geometry, Facial Expressions, 🎭 Texture | [ICT FaceKit](https://github.com/ICT-VGL/ICT-FaceKit) |
-| **TikTok Dataset** | 300+ dance videos (10-15s each), ~100K extracted frames at 30fps with UV coordinates. | 🎥 Video, 🖼️ Image, 🏃 Pose | [TikTok Dataset](https://www.yasamin.page/hdnet_tiktok#h.jr9ifesshn7v) |
-| **Everybody Dance Now** | Long single-dancer videos for training and evaluation, includes self-filmed and YouTube videos. | 🎥 Video, 🏃 Pose | [Everybody Dance Now](https://carolineec.github.io/everybody_dance_now/) |
-| **Obama Weekly Footage** | 17 hours of footage (~2M frames) spanning 8 years. | 🎥 Video, 🎵 Audio | [Obama Weekly Footage](https://grail.cs.washington.edu/projects/AudioToObama/) |
-| **VoxCeleb2** | 1M+ utterances from 6,000+ speakers, collected from YouTube videos (61% male speakers). | 🎵 Audio, 🎥 Video | [VoxCeleb2](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html) |
-| **BIWI** | 15K+ images of 20 people recorded with Kinect while turning heads freely. | 🎭 3D Geometry, 🖼️ Image, 🏃 Pose, 😃 Emotion | [BIWI](https://paperswithcode.com/dataset/biwi-kinect-head-pose) |
-| **VOCASET** | 29 minutes of high-fidelity 4D scans at 60fps, synchronized with 🎵 audio; 12 speakers, 40 sequences per subject. | 🎥 4D Scans, 🎵 Audio | [VOCASET](https://voca.is.tue.mpg.de/) |
-| **SHOW (Synchronous Holistic Optimization in the Wild)** | SMPLX parameters for 4 persons reconstructed from videos; includes 88-frame motion clips. | 🎥 Video, 🎵 Audio, 🎭 Facial Expressions, 🏃 Pose | [SHOW](https://github.com/yhw-yhw/SHOW) |
+| 🏷️ Name | 📊 Statistics | 🔍 Modalities | 🔗 Link |
+| --- | --- | --- | --- |
+| BEAT | 76 hours of speech data, paired with 52D facial blend shape weights; 30 speakers performing in 8 distinct emotional styles across 4 languages. | 🔊 Audio, 🖼️ Images, 🎥 Video, 📝 Text | [BEAT](https://pantomatrix.github.io/BEAT/) |
+| MEAD | A talking-face video corpus featuring 60 actors and actresses talking with eight different emotions at three intensity levels; approximately 40 hours of audio-visual clips per person and view. | 🎥 Video, 🔊 Audio, 📝 Text, 🖼️ Images | [MEAD](https://wywu.github.io/projects/MEAD/MEAD.html) |
+| TEAD | 50,000 quadruples, each including text, emotion tags, Action Units, blend shape weights, and situation sentences. | 📝 Text, 🖼️ Images | - |
+| JAFFE | 213 images of 10 Japanese female models posing 7 facial expressions, annotated with average semantic ratings from 60 annotators. | 🖼️ Images | [JAFFE](https://zenodo.org/records/3451524) |
+| MMI Facial Expression | Over 2900 videos and high-resolution still images of 75 subjects. | 🎥 Video, 🖼️ Images, 📝 Text | [MMI](https://mmifacedb.eu/) |
+| Multiface | High-quality recordings of the faces of 13 identities. An average of 23,000 frames per subject; each frame includes roughly 160 different camera views. | 🖼️ Images, 🔊 Audio, 📋 Tabular Data | [Multiface](https://github.com/facebookresearch/multiface) |
+| ICT FaceKit | 4,000 high-resolution facial scans of 79 subjects (34 female, 45 male) aged 18–67, plus 99 full-head scans and 26 expressions per subject. | 🔷 3D/Point Cloud Data, 🖼️ Images | [ICT FaceKit](https://github.com/ICT-VGL/ICT-FaceKit) |
+| TikTok Dataset | Over 300 single-person dance videos (10–15 seconds each), extracted at 30fps, yielding 100K+ frames. Includes segmented images and computed UV coordinates. | 🎥 Video, 🖼️ Images, 📋 Tabular Data | [TikTok Dataset](https://www.yasamin.page/hdnet_tiktok#h.jr9ifesshn7v) |
+| Everybody Dance Now | Long single-dancer videos for training and evaluation; includes both self-filmed videos and short YouTube videos. | 🎥 Video, 📋 Tabular Data | [Everybody Dance Now](https://carolineec.github.io/everybody_dance_now/) |
+| Obama Weekly Footage | 17 hours of video footage, nearly two million frames, spanning eight years. | 🎥 Video, 🔊 Audio | [Obama Weekly Footage](https://grail.cs.washington.edu/projects/AudioToObama/) |
+| VoxCeleb2 | Over 1 million utterances from over 6,000 speakers, collected from YouTube videos with 61% male speakers. | 🔊 Audio, 🎥 Video | [VoxCeleb2](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html) |
+| BIWI | Over 15K images of 20 people recorded with a Kinect while turning their heads around freely. | 🔷 3D/Point Cloud Data, 🖼️ Images, 📋 Tabular Data, 📝 Text | [BIWI](https://paperswithcode.com/dataset/biwi-kinect-head-pose) |
+| VOCASET | About 29 minutes of high-fidelity 4D scans captured at 60fps, synchronized with audio; features 12 speakers with 40 sequences per subject (each sequence consists of English sentences lasting 3–5 seconds). | 🔷 3D/Point Cloud Data, 🔊 Audio | [VOCASET](https://voca.is.tue.mpg.de/) |
+| SHOW | Contains SMPLX parameters of 4 persons reconstructed from videos; includes 88-frame motion clips for training and validation. | 🎥 Video, 🔊 Audio, 🖼️ Images, 📋 Tabular Data | [SHOW](https://github.com/yhw-yhw/SHOW) |
+
 
 ---
 
