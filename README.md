@@ -205,9 +205,9 @@ These metrics assess how natural, realistic, and perceptually convincing the gen
 | **Metric** | **Description** | **Formula** |
 |------------|-----------------|-------------|
 | **Fréchet Inception Distance (FID)** | Measures statistical distance between real and generated images. | $\text{FID} = \lVert \mu_r - \mu_g \rVert^2 + \text{tr}(\Sigma_r + \Sigma_g - 2(\Sigma_r\Sigma_g)^{1/2})$ |
-| **CLIP Score** | Evaluates semantic similarity between generated images and textual descriptions. | $\text{CLIPScore} = \frac{\cos(t,i)}{\lVert t \rVert \cdot \lVert i \rVert}$ |
-| **Mean Squared Error (MSE)** | Measures pixel-wise difference between generated and real images. | $\text{MSE} = \frac{1}{n}\sum{(x_i - y_i)^2}$ |
-| **Learned Perceptual Image Patch Similarity (LPIPS)** | Assesses perceptual similarity using deep feature embeddings. | $\text{LPIPS}(x,y) = \sum_l \frac{1}{H_l W_l} \sum_{h,w}\lVert \phi_l(x)^{h,w}-\phi_l(y)^{h,w} \rVert_2^2$ |
+| **CLIP Score** | Evaluates semantic similarity between generated images and textual descriptions. | 	$\text{CLIPScore} = \frac{t \cdot i}{\lVert t \rVert \lVert i \rVert}$ |
+| **Mean Squared Error (MSE)** | Measures pixel-wise difference between generated and real images. |	$\text{MSE} = \frac{1}{n}\sum_{i=1}^{n}(x_i - y_i)^2$ |
+| **Learned Perceptual Image Patch Similarity (LPIPS)** | Assesses perceptual similarity using deep feature embeddings. | $\text{LPIPS}(x,y) = \sum_l \frac{1}{H_l W_l} \sum_{h=1}^{H_l}\sum_{w=1}^{W_l}\lVert \phi_l(x)^{h,w}-\phi_l(y)^{h,w} \rVert_2^2$ |
 | **Identity Consistency** | Ensures identity preservation in generated faces by computing cosine similarity. | $\text{IC} = \frac{1}{N}\sum \text{cosine-sim}(f(x_i), f(y_i))$ |
 | **Fréchet Gesture Distance (FGD)** | Measures statistical differences between real and generated gesture distributions. | $\text{FGD} = \lVert \mu_{\text{gesture real}} - \mu_{\text{gesture gen}} \rVert^2 + \text{tr}(\Sigma_{\text{real}} + \Sigma_{\text{gen}} - 2(\Sigma_{\text{real}}\Sigma_{\text{gen}})^{1/2})$ |
 | **CLIP Fréchet Inception Distance (CLIP FID)** | A CLIP-based extension of FID for assessing generated textures. | $\text{CLIPFID} = \lVert \mu_{\text{gesture real}} - \mu_{\text{gesture gen}} \rVert^2 + \text{tr}(\Sigma_{\text{real}} + \Sigma_{\text{gen}} - 2(\Sigma_{\text{real}}\Sigma_{\text{gen}})^{1/2})$ |
@@ -225,7 +225,7 @@ These metrics assess whether the generative model produces diverse and varied ou
 |------------|-----------------|-------------|
 | **Diversity** | Quantifies variation between independently sampled subsets of generated outputs. | $\text{Diversity} = \frac{1}{N}\sum \lVert x_i - x'_i \rVert^2$ |
 | **Multimodality** | Measures diversity of outputs within the same action class. | $\text{Multimodality} = \frac{1}{C \cdot N}\sum \lVert x_{c,n} - x'_{c,n} \rVert^2$ |
-| **Average Pairwise Distance (APD)** | Evaluates diversity across generated samples. | $\text{APD} = \frac{1}{N(N-1)}\sum \lVert x_i - x_j \rVert$ |
+| **Average Pairwise Distance (APD)** | Evaluates diversity across generated samples. | $\text{APD} = \frac{1}{N(N-1)}\sum_{i\neq j} \lVert x_i - x_j \rVert$ |
 
 ---
 
@@ -239,7 +239,7 @@ These metrics assess how well the generated content aligns with ground truth dat
 | **Mean Absolute Joint Error (MAJE)** | Measures positional accuracy of generated motion. | $\text{MAJE} = \frac{1}{n}\sum \lvert x_i - y_i \rvert$ |
 | **Probability of Correct Keypoints (PCK)** | Evaluates the percentage of correct keypoint predictions. | $\text{PCK} = \frac{\text{number of correct keypoints}}{\text{number of total keypoints}}$ |
 | **Beat Consistency (BC)** | Measures alignment between motion and speech rhythms. | $\text{BC} = \frac{1}{T}\sum \cos(\text{motion-beats}(t), \text{speech-beats}(t))$ |
-| **CLIP-Var** | Quantifies texture consistency across different views. | $\text{CLIP-Var} = \min(\cos(f_i, f_j)), \quad i \neq j$ |
+| **CLIP-Var** | Quantifies texture consistency across different views. |	$\text{CLIP-Var} = 1 - \min_{i \neq j}\frac{f_i \cdot f_j}{\lVert f_i \rVert \lVert f_j \rVert}$ |
 | **Multimodal Distance (MM-Distance)** | Measures alignment between generated motion and textual descriptions. | $\text{MM-Distance} = \sqrt{\frac{1}{N}\sum\lVert f_{a,n}-f_{b,n} \rVert^2}$ |
 
 
@@ -470,7 +470,7 @@ Explores diffusion-based methods, VAEs, and other generative techniques to produ
 #### ✂ Image Editing & Disentanglement
 
 - **Lightweight Disentanglement for Image Editing** [🔗](https://ieeexplore.ieee.org/document/10175586)  
-  *Explores the inherent disentanglement properties of stable diffusion models. By partially replacing text embeddings from a style-neutral description with one that reflects the desired style, a lightweight algorithm (optimizing only 50 parameters) is introduced for improved style matching and content preservation—outperforming more complex fine-tuning baselines.*
+  *Explores the inherent disentanglement properties of stable diffusion models. By partially replacing text embeddings from a style-neutral description with one that reflects the desired style, a lightweight algorithm (optimizing only 50 parameters) is introduced for improved style matching and content preservation, outperforming more complex fine-tuning baselines.*
 
 - **SmartEdit** [🔗](https://openaccess.thecvf.com/content/CVPR2024/papers/Huang_SmartEdit_Exploring_Complex_Instruction-based_Image_Editing_with_Multimodal_Large_Language_CVPR_2024_paper.pdf)  
   *Frames image editing as a supervised learning problem by generating a paired training dataset of text editing instructions with before/after images. Built on the Stable Diffusion framework, it successfully handles challenging edits such as object replacement, seasonal changes, background modifications, and alterations of material attributes or artistic mediums.*
