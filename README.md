@@ -208,9 +208,9 @@ These metrics assess how natural, realistic, and perceptually convincing the gen
 | **CLIP Score** | Evaluates semantic similarity between generated images and textual descriptions. | 	$\text{CLIPScore} = \frac{t \cdot i}{\lVert t \rVert \lVert i \rVert}$ |
 | **Mean Squared Error (MSE)** | Measures pixel-wise difference between generated and real images. |	$\text{MSE} = \frac{1}{n}\sum_{i=1}^{n}(x_i - y_i)^2$ |
 | **Learned Perceptual Image Patch Similarity (LPIPS)** | Assesses perceptual similarity using deep feature embeddings. | $\text{LPIPS}(x,y) = \sum_l \frac{1}{H_l W_l} \sum_{h=1}^{H_l}\sum_{w=1}^{W_l}\lVert \phi_l(x)^{h,w}-\phi_l(y)^{h,w} \rVert_2^2$ |
-| **Identity Consistency** | Ensures identity preservation in generated faces by computing cosine similarity. | $\text{IC} = \frac{1}{N}\sum \text{cosine-sim}(f(x_i), f(y_i))$ |
-| **Fréchet Gesture Distance (FGD)** | Measures statistical differences between real and generated gesture distributions. | $\text{FGD} = \lVert \mu_{\text{gesture real}} - \mu_{\text{gesture gen}} \rVert^2 + \text{tr}(\Sigma_{\text{real}} + \Sigma_{\text{gen}} - 2(\Sigma_{\text{real}}\Sigma_{\text{gen}})^{1/2})$ |
-| **CLIP Fréchet Inception Distance (CLIP FID)** | A CLIP-based extension of FID for assessing generated textures. | $\text{CLIPFID} = \lVert \mu_{\text{gesture real}} - \mu_{\text{gesture gen}} \rVert^2 + \text{tr}(\Sigma_{\text{real}} + \Sigma_{\text{gen}} - 2(\Sigma_{\text{real}}\Sigma_{\text{gen}})^{1/2})$ |
+| **Identity Consistency** | Ensures identity preservation in generated faces by computing cosine similarity. | $\text{IC} = \frac{1}{N}\sum_{i=1}^{N} \text{cosine-sim}\Bigl(f(x_i), f(y_i)\Bigr)$                                                          |
+| **Fréchet Gesture Distance (FGD)** | Measures statistical differences between real and generated gesture distributions. | 	$\text{FGD} = \lVert \mu_{\text{real}} - \mu_{\text{gen}} \rVert^2 + \text{tr}(\Sigma_{\text{real}} + \Sigma_{\text{gen}} - 2(\Sigma_{\text{real}}\Sigma_{\text{gen}})^{1/2})$ |
+| **CLIP Fréchet Inception Distance (CLIP FID)** | A CLIP-based extension of FID for assessing generated textures. | 	$\text{CLIPFID} = \lVert \mu_{\text{CLIP,real}} - \mu_{\text{CLIP,gen}} \rVert^2 + \text{tr}(\Sigma_{\text{CLIP,real}} + \Sigma_{\text{CLIP,gen}} - 2(\Sigma_{\text{CLIP,real}} \Sigma_{\text{CLIP,gen}})^{1/2})$ |
 
 
 
@@ -223,9 +223,9 @@ These metrics assess whether the generative model produces diverse and varied ou
 
 | **Metric** | **Description** | **Formula** |
 |------------|-----------------|-------------|
-| **Diversity** | Quantifies variation between independently sampled subsets of generated outputs. | $\text{Diversity} = \frac{1}{N}\sum \lVert x_i - x'_i \rVert^2$ |
-| **Multimodality** | Measures diversity of outputs within the same action class. | $\text{Multimodality} = \frac{1}{C \cdot N}\sum \lVert x_{c,n} - x'_{c,n} \rVert^2$ |
-| **Average Pairwise Distance (APD)** | Evaluates diversity across generated samples. | $\text{APD} = \frac{1}{N(N-1)}\sum_{i\neq j} \lVert x_i - x_j \rVert$ |
+| **Diversity** | Quantifies variation between independently sampled subsets of generated outputs. |	$\text{Diversity} = \frac{1}{N}\sum_{i=1}^{N}\lVert x_i - x'_i \rVert^2$ |
+| **Multimodality** | Measures diversity of outputs within the same action class. | $\text{Multimodality} = \frac{1}{C \cdot N}\sum_{c=1}^{C}\sum_{n=1}^{N}\lVert x_{c,n} - x'_{c,n} \rVert^2$ |
+| **Average Pairwise Distance (APD)** | Evaluates diversity across generated samples. | 	$\text{APD} = \frac{1}{N(N-1)}\sum_{i\neq j} \lVert x_i - x_j \rVert$ |
 
 ---
 
@@ -236,11 +236,11 @@ These metrics assess how well the generated content aligns with ground truth dat
 
 | **Metric** | **Description** | **Formula** |
 |------------|-----------------|-------------|
-| **Mean Absolute Joint Error (MAJE)** | Measures positional accuracy of generated motion. | $\text{MAJE} = \frac{1}{n}\sum \lvert x_i - y_i \rvert$ |
+| **Mean Absolute Joint Error (MAJE)** | Measures positional accuracy of generated motion. | $\text{MAJE} = \frac{1}{n}\sum_{i=1}^{n}\lvert x_i - y_i \rvert$ |
 | **Probability of Correct Keypoints (PCK)** | Evaluates the percentage of correct keypoint predictions. | $\text{PCK} = \frac{\text{number of correct keypoints}}{\text{number of total keypoints}}$ |
-| **Beat Consistency (BC)** | Measures alignment between motion and speech rhythms. | $\text{BC} = \frac{1}{T}\sum \cos(\text{motion-beats}(t), \text{speech-beats}(t))$ |
+| **Beat Consistency (BC)** | Measures alignment between motion and speech rhythms. | $\text{BC} = \frac{1}{T}\sum_{t=1}^{T}\cos\bigl(\text{motion-beats}(t), \text{speech-beats}(t)\bigr)$ |
 | **CLIP-Var** | Quantifies texture consistency across different views. |	$\text{CLIP-Var} = 1 - \min_{i \neq j}\frac{f_i \cdot f_j}{\lVert f_i \rVert \lVert f_j \rVert}$ |
-| **Multimodal Distance (MM-Distance)** | Measures alignment between generated motion and textual descriptions. | $\text{MM-Distance} = \sqrt{\frac{1}{N}\sum\lVert f_{a,n}-f_{b,n} \rVert^2}$ |
+| **Multimodal Distance (MM-Distance)** | Measures alignment between generated motion and textual descriptions. | $\text{MM-Distance} = \sqrt{\frac{1}{N}\sum_{n=1}^{N}\lVert f_{a,n} - f_{b,n} \rVert^2}$ |
 
 
 
@@ -252,8 +252,8 @@ These metrics assess whether generated motion adheres to real‑world physical c
 
 | **Metric** | **Description** | **Formula** |
 |------------|-----------------|-------------|
-| **Foot Skating (FS)** | Detects unnatural foot movements in generated motion. | $\text{FS} = \frac{1}{T}\sum\lVert \text{foot-velocity}(t) - \text{expected-velocity}(t) \rVert$ |
-| **Mean Acceleration Difference (MAD)** | Evaluates smoothness of generated motion by comparing acceleration. | $\text{MAD} = \frac{1}{n}\sum\lVert \text{acceleration}_i - \text{acceleration-pred}_i \rVert^2$ |
+| **Foot Skating (FS)** | Detects unnatural foot movements in generated motion. | $\text{FS} = \frac{1}{T}\sum_{t=1}^{T}\lVert \text{foot-velocity}(t) - \text{expected-velocity}(t) \rVert$ |
+| **Mean Acceleration Difference (MAD)** | Evaluates smoothness of generated motion by comparing acceleration. | $\text{MAD} = \frac{1}{n}\sum_{i=1}^{n}\lVert a_i^{\text{gen}} - a_i^{\text{gt}} \rVert^2$ |
 
 
 ---
@@ -265,7 +265,8 @@ These metrics evaluate the computational cost of generative models.
 | **Metric** | **Description** | **Formula** |
 |------------|-----------------|-------------|
 | **Execution Time** | Measures the time required to generate outputs. | $\text{Execution Time} = \text{End Time} - \text{Start Time}$ |
-| **Kernel Inception Distance (KID)** | Measures output similarity using kernel functions. | $\text{KID} = \frac{1}{n(n-1)}\sum k(\phi(x_i),\phi(x_j)) + \frac{1}{m(m-1)}\sum k(\phi(y_i),\phi(y_j)) - \frac{2}{nm}\sum k(\phi(x_i),\phi(y_j))$ |
+| **Kernel Inception Distance (KID)** | Measures output similarity using kernel functions. | $\text{KID} = \frac{1}{n(n-1)} \sum_{i \neq j} k(x_i, x_j) + \frac{1}{m(m-1)} \sum_{i \neq j} k(y_i, y_j) - \frac{2}{nm} \sum_{i=1}^{n} \sum_{j=1}^{m} k(x_i, y_j)$
+ |
 
 ---
 
