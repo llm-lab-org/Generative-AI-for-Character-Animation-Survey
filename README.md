@@ -9,6 +9,8 @@ This repository is designed to collect and categorize papers, datasets, and reso
 ## 📑 List of Contents
 
 - [📝 Abstract](#-abstract)
+- [🗺 Overview](#-overview)
+- [🌳 Taxonomy](#-taxonomy)
 - [📚 Background](#-background)
   - [🤖 Models](#-models)
     - [🎨 Computer Graphics Models](#-computer-graphics-models)
@@ -76,6 +78,10 @@ Generative AI is transforming various fields, including art, gaming, and animati
 
 This survey offers a comprehensive review of the state-of-the-art generative AI applications for animated character design and behavior, integrating a wide range of aspects often examined in isolation (e.g., avatars, gestures, and facial expressions). Unlike previous studies, it provides a unified perspective covering all major applications of generative AI in character animation. The survey begins with foundational concepts and introduces evaluation metrics tailored to this domain, then explores key areas such as facial animation, image synthesis, avatar generation, gesture modeling, motion synthesis, expression rendering, and texture generation. Finally, it addresses the main challenges and outlines future research directions, offering a roadmap to advance AI-driven character animation technologies. This survey aims to serve as a resource for researchers and developers in generative AI for animation and related fields.
 
+---
+## 🗺 Overview
+---
+## 🌳 Taxonomy
 ---
 
 ## 📚 Background
