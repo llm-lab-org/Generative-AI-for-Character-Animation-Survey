@@ -82,8 +82,9 @@ This survey offers a comprehensive review of the state-of-the-art generative AI 
 ## 🗺 Overview
 ---
 ## 🌳 Taxonomy
-[![ Overview of different components in animated character generation. Each aspect, including face, expression, image, avatar, gesture, motion, object, and texture, plays a crucial role in enhancing realism and expressiveness within digital animation environments. Generative AI techniques, such as transformer-based and diffusion-based models, contribute to these components by improving quality, streamlining content creation, and enabling more sophisticated character animation. 
-    Generative AI techniques, such as transformer-based and diffusion-based models, contribute to these components, significantly enhancing quality and streamlining content creation.](https://i.postimg.cc/GtNMTS6m/overview.png)](https://postimg.cc/rR1Gvg8B)
+[![overview.png](https://i.postimg.cc/GtNMTS6m/overview.png)](https://postimg.cc/rR1Gvg8B)
+ Overview of different components in animated character generation. Each aspect, including face, expression, image, avatar, gesture, motion, object, and texture, plays a crucial role in enhancing realism and expressiveness within digital animation environments. Generative AI techniques, such as transformer-based and diffusion-based models, contribute to these components by improving quality, streamlining content creation, and enabling more sophisticated character animation. 
+    Generative AI techniques, such as transformer-based and diffusion-based models, contribute to these components, significantly enhancing quality and streamlining content creation.
 ---
 
 ## 📚 Background
