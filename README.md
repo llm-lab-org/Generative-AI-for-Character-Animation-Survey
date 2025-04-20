@@ -83,7 +83,7 @@ This survey offers a comprehensive review of the state-of-the-art generative AI 
 [![overview.png](https://i.postimg.cc/GtNMTS6m/overview.png)](https://postimg.cc/rR1Gvg8B)
 ---
 ## 🌳 Taxonomy
-[![taxonomy.png](https://i.postimg.cc/50V06THx/Screenshot-2025-04-20-110808.png)](https://postimg.cc/8FZDYyB3)
+[![reconstructed-highres.png](https://i.postimg.cc/K8bx7BGN/reconstructed-highres.png)](https://postimg.cc/fJ8GD30t)
 ---
 
 ## 📚 Background
