@@ -1007,4 +1007,4 @@ If you find our paper or repository useful, please cite the paper:
 If you have questions, please send an email to mahdi.abootorabi2@gmail.com.
 
 ## ⭐ Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=llm-lab-org/Generative-AI-for-Character-Animation-Survey&type=Date)](https://www.star-history.com/#llm-lab-org/llm-lab-org/Generative-AI-for-Character-Animation-Survey&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=llm-lab-org/Generative-AI-for-Character-Animation-Survey&type=Date)](https://www.star-history.com/#llm-lab-org/Generative-AI-for-Character-Animation-Survey&Date)
