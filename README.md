@@ -984,3 +984,21 @@ If you find our survey or repository useful, please consider citing our paper: -
 
 | Name | Link |
 |------|------| -->
+
+
+---
+## 🔗 Citations
+If you find our paper or repository useful, please cite the paper:
+```
+@article{abootorabi2025generative,
+  title={Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions},
+  author={Abootorabi, Mohammad Mahdi and Ghahroodi, Omid and Zahraei, Pardis Sadat and Behzadasl, Hossein and Mirrokni, Alireza and Salimipanah, Mobina and Rasouli, Arash and Behzadipour, Bahar and Azarnoush, Sara and Maleki, Benyamin and others},
+  journal={arXiv preprint arXiv:2504.19056},
+  year={2025}
+}
+```
+## 📧 Contact
+If you have questions, please send an email to mahdi.abootorabi2@gmail.com.
+
+## ⭐ Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=llm-lab-org/Generative-AI-for-Character-Animation-Survey&type=Date)](https://www.star-history.com/#llm-lab-org/llm-lab-org/Generative-AI-for-Character-Animation-Survey&Date)
