@@ -868,15 +868,76 @@ Discusses approaches for text-to-3D object generation, such as Neural Radiance F
 ---
 
 ## 🧵 Texture
+
 Focuses on methods for generating detailed surface textures that enhance the realism of 3D models, including text-guided synthesis and neural rendering techniques.
 
 ### 🗂 Datasets
+
+| 🏷️ Name               | 📊 Statistics                                                                                              | 🔍 Modalities                                 | 🔗 Link                                                                                       |
+|-----------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **3D-FUTURE**         | 9,992 detailed 3D furniture models with high-res textures; 20,240 synthetic images across 5,000 scenes.     | 🔷 3D Geometry, 🖼️ Texture, 🖼️ 2D Images       | [3D-FUTURE](https://tianchi.aliyun.com/specials/promotion/alibaba-3d-future)                  |
+| **Objaverse**         | Over 800 K textured 3D models with natural-language descriptions across diverse categories.                 | 🔷 3D Geometry, 🖼️ Texture, 📝 Language        | [Objaverse](https://objaverse.allenai.org/)                                                   |
+| **ShapeNet**          | Large-scale structured 3D meshes (incl. 300 car models) used for texture benchmarking.                      | 🔷 3D Geometry, 🖼️ Texture                   | [ShapeNet](https://shapenet.org/)                                                             |
+| **ShapeNetSem**       | Semantic extension of ShapeNet with 445 annotated meshes for structure-aware evaluation.                   | 🔷 3D Geometry, 🖼️ Texture                   | [ShapeNetSem](https://shapenet.org/)                                                          |
+| **ModelNet40**        | 40-category CAD benchmark for generalization testing in geometry-aware texture generation.                  | 🔷 3D Geometry                                | [ModelNet40](https://modelnet.cs.princeton.edu/)                                              |
+| **Sketchfab**         | Repository of commercial and scanned 3D models for qualitative texture evaluation.                          | 🔷 3D Geometry, 🖼️ Texture                   | [Sketchfab](https://sketchfab.com/)                                                           |
+| **CGTrader**          | High-res 3D assets for mesh diversity in text-driven synthesis.                                             | 🔷 3D Geometry, 🖼️ Texture                   | [CGTrader](https://www.cgtrader.com/)                                                         |
+| **TurboSquid**        | Commercial dataset of detailed assets and fine-surface textures for high-fidelity evaluations.             | 🔷 3D Geometry, 🖼️ Texture                   | [TurboSquid](https://www.turbosquid.com/)                                                     |
+| **RenderPeople**      | High-quality human scans with detailed anatomy and surface properties for text-to-texture testing.         | 🔷 3D Scans                                  | [RenderPeople](https://renderpeople.com/)                                                     |
+| **Tripleganger**      | Scanned high-fidelity human models for evaluating facial and clothing texture realism.                     | 🔷 3D Scans                                  | [Tripleganger](https://triplegangers.com/)                                                     |
+| **Stanford 3D Scans** | High-resolution object scans for generalization tests on real-world geometries.                             | 🔷 3D Scans                                  | [Stanford 3D Scans](http://graphics.stanford.edu/data/3Dscanrep/)                              |
+| **ElBa**              | 30 K synthetic texture images with 3 M texel-level annotations for element-based analysis.                 | 🖼️ 2D Texture, 📝 Attributes & Layout         | [ElBa](https://github.com/godimarcovr/Texel-Att)                                              |
 
 ---
 
 ### 🤖 Models
 
----
+- **CLIP-Pseudo Inpainting** 🔗  
+  Pioneering masked-inpainting pipeline using CLIP pseudo-captioning to semantically align 2D renderings with 3D geometry without paired text data.  
+  [arXiv:2303.13273](https://arxiv.org/abs/2303.13273)
+
+- **Text2Tex** 🔗  
+  Two-stage diffusion: Stage I generates initial textures via depth-to-image denoising; Stage II back-projects and refines them in UV space by selecting extra views to correct artifacts.  
+  [arXiv:2303.11396](https://arxiv.org/abs/2303.11396)
+
+- **TEXTure** 🔗  
+  Inpainting-based diffusion with trip-based surface segmentation to generate, refine, or preserve regions, ensuring smooth transitions and efficient passes.  
+  [Project page](https://texturepaper.github.io/TEXTurePaper/)
+
+- **Paint-it** 🔗  
+  Integrates PBR rendering and U-Net reparameterization with CLIP-guided Score Distillation Sampling for high-fidelity mesh texturing, at the cost of per-model optimization time.  
+  [arXiv:2312.11360](https://arxiv.org/abs/2312.11360)
+
+- **Point-UV Diffusion** 🔗  
+  Coarse-to-fine pipeline: initial mesh-surface painting then 2D UV diffusion refinement, decoupling global structure generation from fine-detail synthesis.  
+  [ICCV 2023 paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Yu_Texture_Generation_on_3D_Meshes_with_Point-UV_Diffusion_ICCV_2023_paper.pdf)
+
+- **TexPainter** 🔗  
+  Latent diffusion in color-space embeddings using depth-conditioned DDIM sampling across fixed viewpoints, aggregated into a unified texture map.  
+  [arXiv:2406.18539](https://arxiv.org/abs/2406.18539)
+
+- **TexFusion** 🔗  
+  Sequential Interlaced Multiview Sampler fuses multi-view latent features during diffusion, reducing inference time while preserving cross-view coherence.  
+  [arXiv:2310.13772](https://arxiv.org/abs/2310.13772)
+
+- **GenesisTex** 🔗  
+  Cross-view attention during diffusion followed by Img2Img post-processing to eliminate seams and enhance surface detail in UV maps.  
+  [arXiv:2403.17782](https://arxiv.org/abs/2403.17782)
+
+- **Consistency²** 🔗  
+  Latent Consistency Models that achieve fast, multi-view coherent textures with just four denoising steps, disentangling noise and color paths.  
+  [arXiv:2406.11202](https://arxiv.org/abs/2406.11202)
+
+- **Meta 3D TextureGen** 🔗  
+  Two-stage: geometry-aware diffusion produces multi-view images; incidence-aware UV inpainting and patch upscaling yield seamless 4K textures.  
+  [Meta Research](https://ai.meta.com/research/publications/meta-3d-texturegen-fast-and-consistent-texture-generation-for-3d-objects/)
+
+- **VCD-Texture** 🔗  
+  Variance Alignment with joint noise prediction and multi-view aggregation modules to maintain statistical feature consistency across views.  
+  [arXiv:2407.04461](https://arxiv.org/abs/2407.04461)
+
+
+
 
 <!-- ## 🔗 Citations {-citations}
 
