@@ -9,6 +9,7 @@ This repository is designed to collect and categorize papers, datasets, and reso
 
 ## 📢 News
 - **April 27, 2025**: We release the first version of our survey.
+- **November 24, 2026**: We update the repository with recent papers and previously missing entries across the taxonomy.
 
 
   *Feel free to cite, contribute, or open a pull request to add recent related papers!*
@@ -70,6 +71,9 @@ This repository is designed to collect and categorize papers, datasets, and reso
 - [📦 Object](#-object)
   - [🗂 Datasets](#-datasets-6)
   - [🤖 Models](#-models-7)
+    - [🌈 Diffusion-Guided Score Distillation](#-diffusion-guided-score-distillation)
+    - [⚡ Optimization-Amortized Models](#-optimization-amortized-models)
+    - [💎 High-Fidelity and Geometry-Aware Models](#-high-fidelity-and-geometry-aware-models)
 - [🧵 Texture](#-texture)
   - [🗂 Datasets](#-datasets-7)
   - [🤖 Models](#-models-8)
@@ -105,6 +109,8 @@ This survey offers a comprehensive review of the state-of-the-art generative AI 
     *An extension of SMPL that incorporates detailed hand modeling by introducing hand joint parameters (θhands).*
   - **SMPL-X**  
     *Further extends SMPL+H by including facial expressions along with detailed hand and body modeling for full-body human representation.*
+- **FLAME** [🔗](https://flame.is.tue.mpg.de/)  
+  *A parametric 3D face model learned from 4D scans that represents identity and expression, widely used as a foundation for face and head animation.*
 - **SMIL (Skinned Multi-Infant Linear Model)** [🔗](https://files.is.tue.mpg.de/black/papers/miccai18.pdf)  
   *A model developed specifically for infants, addressing challenges in capturing non-cooperative subjects with low-quality RGB-D data.*
 - **SMAL (Skinned Multi-Animal Linear Model)** [🔗](https://smal.is.tue.mpg.de/)  
@@ -385,6 +391,7 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 | BIWI | Over 15K images of 20 people recorded with a Kinect while turning their heads around freely. | 🔷 3D/Point Cloud Data, 🖼️ Images, 📋 Tabular Data, 📝 Text | [BIWI](https://paperswithcode.com/dataset/biwi-kinect-head-pose) |
 | VOCASET | About 29 minutes of high-fidelity 4D scans captured at 60fps, synchronized with audio; features 12 speakers with 40 sequences per subject (each sequence consists of English sentences lasting 3–5 seconds). | 🔷 3D/Point Cloud Data, 🔊 Audio | [VOCASET](https://voca.is.tue.mpg.de/) |
 | SHOW | Contains SMPLX parameters of 4 persons reconstructed from videos; includes 88-frame motion clips for training and validation. | 🎥 Video, 🔊 Audio, 🖼️ Images, 📋 Tabular Data | [SHOW](https://github.com/yhw-yhw/SHOW) |
+| TexTalk4D | 100 minutes of audio-synced, scan-level meshes with detailed 8K dynamic textures from 100 subjects. | 🔷 3D/Point Cloud Data, 🔊 Audio, 🖼️ Images | [TexTalk4D](https://xuanchenli.github.io/TexTalk/) |
 
 
 ---
@@ -423,6 +430,37 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 - **FaceDiffuser** [🔗](https://arxiv.org/abs/2309.11306)  
   *Utilizes stochastic approaches to enhance motion variability and disentangle emotional expressiveness in facial animation.*
 
+- **CodeTalker** [🔗](https://doubiiu.github.io/projects/codetalker/)  
+  *A speech-driven 3D facial animation model that represents motion with a discrete codebook prior, improving lip synchronization and motion realism over continuous regression baselines.*
+
+- **SadTalker** [🔗](https://sadtalker.github.io/)  
+  *Learns realistic 3D motion coefficients from audio to animate a single portrait image, producing stylized talking-face videos with synchronized lip and head motion.*
+
+- **VASA-1** [🔗](https://www.microsoft.com/en-us/research/project/vasa-1/)  
+  *A real-time, audio-driven talking-face model that generates lip-synced facial dynamics and natural head motion in a disentangled face latent space from a single image and a speech clip.*
+
+- **EMO** [🔗](https://humanaigc.github.io/emote-portrait-alive/)  
+  *An audio-to-video diffusion model that animates a portrait into an expressive talking-head video under weak conditions, emphasizing emotional and stylistic facial motion.*
+
+- **Hallo** [🔗](https://arxiv.org/abs/2406.08801)  
+  *A hierarchical audio-driven framework for portrait image animation that synthesizes talking-head video from a still image and speech.*
+
+- **Teller** [🔗](https://arxiv.org/abs/2503.18429)  
+  *A streaming, autoregressive audio-driven portrait animation model that maps speech to discrete facial-motion tokens for real-time talking-head generation.*
+
+- **DualTalk** [🔗](https://ziqiaopeng.github.io/dualtalk/)  
+  *A unified 3D talking-head framework for multi-round dual-speaker conversations, generating both speaking motions and listening-time nonverbal feedback.*
+
+- **TexTalker** [🔗](https://xuanchenli.github.io/TexTalk/)  
+  *A diffusion-based speech-driven 3D talking avatar model that jointly generates facial geometry and personalized dynamic textures, trained on the TexTalk4D dataset.*
+
+- **Wav2Sem** [🔗](https://arxiv.org/abs/2505.23290)  
+  *A plug-and-play audio semantic-decoupling module that enriches self-supervised speech features to reduce lip-shape averaging among near-homophones in 3D speech-driven facial animation.*
+
+- **Perceptually Accurate 3D Talking Head Generation** [🔗](https://perceptual-3d-talking-head.github.io/)  
+  *Learns a speech-mesh representation used as a perceptual loss and metric to improve temporal synchronization, lip readability, and expressiveness in 3D talking-head models.*
+
+
 
 #### 🔁 Expression Retargeting & Motion Transfer
 
@@ -449,6 +487,10 @@ Covers emotion-driven synthesis, facial expression retargeting, and multimodal m
 
 - **DiffuseStyleGesture** [🔗](https://arxiv.org/abs/2305.04919)  
   *Referenced as a baseline model for facial expression and gesture synthesis in comparison to DiffSHEG.*
+
+- **LivePortrait** [🔗](https://liveportrait.github.io/)  
+  *An efficient portrait-animation method with stitching and retargeting controls for transferring facial motion onto a source portrait while preserving identity.*
+
 
 ---
 
@@ -608,6 +650,13 @@ Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digi
 - **Make-Your-Anchor** [🔗](https://arxiv.org/abs/2403.16510)    
   *Introduces a novel approach for generating 2D anchor-style avatars capable of realistic full-body motion and expression. It utilizes a Structure-Guided Diffusion Model (SGDM) to ensure coherent and expressive avatar generation.*
 
+- **HumanGaussian** [🔗](https://alvinliu0.github.io/projects/HumanGaussian)  
+  *A text-driven 3D human generation method that represents the avatar with 3D Gaussian splatting, producing structured geometry and appearance from text prompts.*
+
+- **GaussianIP** [🔗](https://arxiv.org/abs/2503.11143)  
+  *A two-stage framework for identity-preserving 3D human generation from text and image prompts, using Adaptive Human Distillation Sampling and view-consistent refinement.*
+
+
 
 #### 🔀 Hybrid Methods
 
@@ -616,6 +665,22 @@ Reviews approaches for both 2D and 3D avatar creation, emphasizing lifelike digi
 
 - **DreamWaltz** [🔗](https://idea-research.github.io/DreamWaltz/)   
   *Referenced as a comparative baseline, this model illustrates limitations in animation capabilities and inherited biases when compared to hybrid approaches like DreamAvatar.*
+
+- **GaussianAvatars** [🔗](https://shenhanqian.github.io/gaussian-avatars)  
+  *Builds photorealistic, animatable 3D head avatars by attaching rigged 3D Gaussians to a parametric morphable face model.*
+
+- **GAvatar** [🔗](https://nvlabs.github.io/GAvatar/)  
+  *Generates animatable 3D Gaussian avatars from text using primitive-based Gaussians, implicit attribute fields, and SDF-based mesh learning for detailed geometry and fast rendering.*
+
+- **GASP** [🔗](https://microsoft.github.io/GASP/)  
+  *Fits photorealistic, real-time, 360° Gaussian avatars from a single image or short video by leveraging a generative prior trained on synthetic data.*
+
+- **Avat3r** [🔗](https://tobias-kirschstein.github.io/avat3r/)  
+  *A large reconstruction model that regresses a high-fidelity, animatable 3D Gaussian head avatar from only a few input images, with cross-attention to an expression code for animation.*
+
+- **GaussianAvatar-Editor** [🔗](https://xiangyueliu.github.io/GaussianAvatar-Editor/)  
+  *A photorealistic editor for animatable Gaussian head avatars that supports identity-preserving appearance and expression edits.*
+
 
 ---
 
@@ -741,6 +806,22 @@ Examines methods for generating human-like gestures and co-speech movements, cri
 - **DiffuGesture** [🔗](https://dl.acm.org/doi/10.1145/3610661.3616552)    
   *Focuses on generating gestures for two-person dialogues with specialized diffusion techniques tailored for interactive and conversational settings.*
 
+- **EMAGE** [🔗](https://pantomatrix.github.io/EMAGE/)  
+  *A holistic co-speech gesture model that generates face, body, hand, and global motion from audio and masked gesture hints using a Masked Audio Gesture Transformer and compositional VQ-VAEs, and introduces the BEAT2 dataset.*
+
+- **Semantic Gesticulator** [🔗](https://pku-mocca.github.io/Semantic-Gesticulator-Page/)  
+  *A semantics-aware co-speech gesture system that retrieves linguistic semantic gesture candidates and aligns them with a GPT-based rhythm model for more meaningful nonverbal motion.*
+
+- **MambaTalk** [🔗](https://kkakkkka.github.io/MambaTalk/)  
+  *An efficient holistic co-speech gesture synthesis framework that uses selective state-space (Mamba) models to generate diverse, speech-synchronized 3D gestures.*
+
+- **RAG-Gesture** [🔗](https://vcai.mpi-inf.mpg.de/projects/RAG-Gesture/)  
+  *A diffusion-based co-speech gesture generator that retrieves semantically meaningful exemplar motions and injects them at inference via DDIM inversion and controllable retrieval guidance.*
+
+- **Semantic Motion Anchors** [🔗](https://semantic-motion-anchors.github.io/)  
+  *Learns a shared representation between spoken text and gesture for co-speech gesture retrieval, synthesis, and understanding, with a focus on semantically meaningful motion.*
+
+
 ---
 
 ## 🎥 Motion
@@ -834,6 +915,19 @@ Highlights text-constrained motion generation techniques, including MotionGPT an
 - **OmniControl** [🔗](https://neu-vi.github.io/omnicontrol/)    
   *Extends spatial guidance by cumulatively summing relative pelvis locations to infer global positions. It also introduces realism guidance, propagating control signals from keyframes and the pelvis to other joints for coherent, natural motion generation.*
 
+- **MDM (Human Motion Diffusion Model)** [🔗](https://guytevet.github.io/mdm-page/)  
+  *A seminal diffusion model for generating and editing human motion from text or action prompts, predicting the clean motion sample at each diffusion step rather than the noise.*
+
+- **MotionLCM** [🔗](https://dai-wenxun.github.io/MotionLCM-page/)  
+  *A latent consistency model for real-time, controllable text-to-motion generation, distilling a motion diffusion model into a few-step latent sampler.*
+
+- **MARDM** [🔗](https://neu-3dvi.github.io/MARDM/)  
+  *A diffusion-based text-to-motion model that performs masked autoregression in a reformed continuous motion representation, addressing limitations of both standard diffusion and VQ-token approaches.*
+
+- **MoLingo** [🔗](https://hynann.github.io/molingo/MoLingo.html)  
+  *A text-to-motion model that denoises in a semantically aligned continuous latent space and uses multi-token cross-attention for tighter text–motion correspondence.*
+
+
 ---
 
 ## 📦 Object
@@ -865,6 +959,60 @@ Discusses approaches for text-to-3D object generation, such as Neural Radiance F
 ---
 
 ### 🤖 Models
+
+#### 🌈 Diffusion-Guided Score Distillation
+
+- **DreamFusion** [🔗](https://dreamfusion3d.github.io/)  
+  *Pioneers text-to-3D generation by optimizing a NeRF with Score Distillation Sampling from a pretrained 2D diffusion model, without 3D supervision.*
+
+- **Magic3D** [🔗](https://research.nvidia.com/labs/dir/magic3d/)  
+  *A two-stage text-to-3D pipeline that first optimizes a coarse NeRF and then refines a textured mesh, improving resolution, speed, and geometric sharpness over single-stage SDS optimization.*
+
+- **DreamTime** [🔗](https://arxiv.org/abs/2306.12422)  
+  *Improves SDS-based 3D optimization by aligning timestep sampling with the diffusion schedule rather than using uniform timestep sampling.*
+
+- **HD-Fusion** [🔗](https://arxiv.org/abs/2307.16183)  
+  *Leverages hierarchical, multi-scale noise estimation and timestep fusion to produce more detailed text-to-3D assets.*
+
+- **Dream3D** [🔗](https://arxiv.org/abs/2212.14704)  
+  *Conditions text-to-3D optimization on 3D shape priors and rendered-style images to improve geometric plausibility in zero-shot synthesis.*
+
+- **SDFusion** [🔗](https://yccyenchicheng.github.io/SDFusion/)  
+  *A multimodal diffusion model over latent signed distance functions that supports 3D generation, completion, and reconstruction from text, images, or partial shapes.*
+
+#### ⚡ Optimization-Amortized Models
+
+- **ATT3D** [🔗](https://arxiv.org/abs/2306.07349)  
+  *Amortizes text-to-3D synthesis by training across batches of prompts, enabling a single forward-pass mapping from text to 3D and operations such as prompt interpolation.*
+
+- **LATTE3D** [🔗](https://research.nvidia.com/labs/toronto-ai/LATTE3D/)  
+  *A large-scale amortized text-to-3D model that produces detailed textured meshes in under a second by combining 3D-aware priors with stronger shape regularization.*
+
+- **IT3D** [🔗](https://arxiv.org/abs/2308.11473)  
+  *A hybrid text-to-3D approach that retains SDS optimization but accelerates and sharpens results with a learned, pose-conditioned refinement module.*
+
+#### 💎 High-Fidelity and Geometry-Aware Models
+
+- **Fantasia3D** [🔗](https://fantasia3d.github.io/)  
+  *Disentangles geometry and appearance for text-to-3D generation by combining a DMTet mesh representation with BRDF-based material modeling for relightable assets.*
+
+- **Vox-E** [🔗](https://tau-vailab.github.io/Vox-E/)  
+  *Enables text-guided local editing of 3D objects in voxel space, using cross-attention-driven segmentation and 3D-aware regularization to preserve overall structure.*
+
+- **LGM** [🔗](https://me.kiui.moe/lgm/)  
+  *A large multi-view Gaussian model that reconstructs high-resolution 3D content from very few views, supporting image-to-3D and text-to-3D with differentiable mesh extraction.*
+
+- **Meta 3D AssetGen** [🔗](https://assetgen.github.io/)  
+  *Generates 3D meshes with high-quality geometry, texture, and PBR materials by combining multi-view synthesis, SDF reconstruction, and transformer-based texture refinement.*
+
+- **IPDreamer** [🔗](https://arxiv.org/abs/2310.05375)  
+  *An appearance-controllable 3D generation method that uses image-prompt score distillation and mask-guided alignment to follow complex image prompts.*
+
+- **Hunyuan3D 2.0** [🔗](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)  
+  *A large-scale 3D foundation system with a shape-generation diffusion transformer (Hunyuan3D-DiT) and a texture synthesis model (Hunyuan3D-Paint) for high-resolution textured assets.*
+
+- **TRELLIS** [🔗](https://arxiv.org/abs/2412.01506)  
+  *Introduces Structured LATents (SLAT) for scalable 3D generation, decoding to radiance fields, 3D Gaussians, or meshes and supporting fast text- or image-to-3D creation and editing.*
 
 ---
 
@@ -936,6 +1084,15 @@ Focuses on methods for generating detailed surface textures that enhance the rea
 - **VCD-Texture** 🔗  
   Variance Alignment with joint noise prediction and multi-view aggregation modules to maintain statistical feature consistency across views.  
   [arXiv:2407.04461](https://arxiv.org/abs/2407.04461)
+
+- **Paint3D** 🔗  
+  Lighting-less texture diffusion that paints high-quality textures on arbitrary 3D meshes from text or image prompts without baking in illumination.  
+  [arXiv:2312.13913](https://arxiv.org/abs/2312.13913)
+
+- **FlashTex** 🔗  
+  Fast relightable mesh texturing with LightControlNet, producing consistent textures that can be relit after generation.  
+  [Project page](https://flashtex.github.io/)
+
 
 
 
